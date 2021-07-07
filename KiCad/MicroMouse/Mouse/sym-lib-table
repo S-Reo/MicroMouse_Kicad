@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name Mouse)(type Legacy)(uri ${KIPRJMOD}/Mouse.lib)(options "")(descr ""))
+  (lib (name 01-rescue)(type Legacy)(uri ${KIPRJMOD}/01-rescue.lib)(options "")(descr ""))
+  (lib (name POWER-rescue)(type Legacy)(uri ${KIPRJMOD}/POWER-rescue.lib)(options "")(descr ""))
+)

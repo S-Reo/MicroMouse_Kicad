@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name BootLorder)(type Legacy)(uri ${KIPRJMOD}/BootLorder.lib)(options "")(descr ""))
+)

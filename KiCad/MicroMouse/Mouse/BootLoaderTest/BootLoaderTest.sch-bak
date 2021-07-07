@@ -1,0 +1,223 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BootLorder:STM32F446RET7 IC1
+U 1 1 604FA609
+P 2350 2400
+F 0 "IC1" H 4494 1696 50  0000 L CNN
+F 1 "STM32F446RET7" H 4494 1605 50  0000 L CNN
+F 2 "QFP50P1200X1200X160-64N" H 4300 2900 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/5/STM32F446RET7.pdf" H 4300 2800 50  0001 L CNN
+F 4 "ARM Microcontrollers - MCU 16/32-BITS MICROS" H 4300 2700 50  0001 L CNN "Description"
+F 5 "1.6" H 4300 2600 50  0001 L CNN "Height"
+F 6 "STMicroelectronics" H 4300 2500 50  0001 L CNN "Manufacturer_Name"
+F 7 "STM32F446RET7" H 4300 2400 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "511-STM32F446RET7" H 4300 2300 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM32F446RET7?qs=qzCNEk%252BRr%252BZ3vIhuSM4Ejg%3D%3D" H 4300 2200 50  0001 L CNN "Mouser Price/Stock"
+F 10 "STM32F446RET7" H 4300 2100 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/stm32f446ret7/stmicroelectronics" H 4300 2000 50  0001 L CNN "Arrow Price/Stock"
+	1    2350 2400
+	1    0    0    -1  
+$EndComp
+Text GLabel 5400 1900 1    50   Input ~ 0
+PC8
+$Comp
+L power:GND #PWR?
+U 1 1 604FBE61
+P 5400 3000
+F 0 "#PWR?" H 5400 2750 50  0001 C CNN
+F 1 "GND" H 5405 2827 50  0000 C CNN
+F 2 "" H 5400 3000 50  0001 C CNN
+F 3 "" H 5400 3000 50  0001 C CNN
+	1    5400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 604FC3A0
+P 5400 2200
+F 0 "R1" H 5470 2246 50  0000 L CNN
+F 1 "330" H 5470 2155 50  0000 L CNN
+F 2 "" V 5330 2200 50  0001 C CNN
+F 3 "~" H 5400 2200 50  0001 C CNN
+	1    5400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 604FC8C8
+P 5400 2650
+F 0 "D1" V 5439 2532 50  0000 R CNN
+F 1 "LED" V 5348 2532 50  0000 R CNN
+F 2 "" H 5400 2650 50  0001 C CNN
+F 3 "~" H 5400 2650 50  0001 C CNN
+	1    5400 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 1900 5400 2050
+Wire Wire Line
+	5400 2350 5400 2500
+Wire Wire Line
+	5400 2800 5400 3000
+Text GLabel 4700 3300 2    50   Output ~ 0
+PC8
+Wire Wire Line
+	4450 3300 4700 3300
+$Comp
+L Switch:SW_MEC_5G SW1
+U 1 1 605006C6
+P 5050 4100
+F 0 "SW1" V 5096 4052 50  0000 R CNN
+F 1 "SW_MEC_5G" V 5005 4052 50  0000 R CNN
+F 2 "" H 5050 4300 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 5050 4300 50  0001 C CNN
+	1    5050 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 60500E4A
+P 5800 4100
+F 0 "C1" H 5915 4146 50  0000 L CNN
+F 1 "0.1µ" H 5915 4055 50  0000 L CNN
+F 2 "" H 5838 3950 50  0001 C CNN
+F 3 "~" H 5800 4100 50  0001 C CNN
+	1    5800 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 60503121
+P 5400 5050
+F 0 "R2" H 5470 5096 50  0000 L CNN
+F 1 "10k" H 5470 5005 50  0000 L CNN
+F 2 "" V 5330 5050 50  0001 C CNN
+F 3 "~" H 5400 5050 50  0001 C CNN
+	1    5400 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4300 5050 4450
+Wire Wire Line
+	5050 4450 5400 4450
+Wire Wire Line
+	5800 4250 5800 4450
+Wire Wire Line
+	5800 4450 5400 4450
+Connection ~ 5400 4450
+$Comp
+L power:GND #PWR?
+U 1 1 605081DB
+P 5400 5250
+F 0 "#PWR?" H 5400 5000 50  0001 C CNN
+F 1 "GND" H 5405 5077 50  0000 C CNN
+F 2 "" H 5400 5250 50  0001 C CNN
+F 3 "" H 5400 5250 50  0001 C CNN
+	1    5400 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 5200 5400 5250
+Connection ~ 5400 3650
+Wire Wire Line
+	5400 3650 5800 3650
+Wire Wire Line
+	5400 3650 5050 3650
+Wire Wire Line
+	5400 3550 5400 3650
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6050282D
+P 5400 3550
+F 0 "#PWR?" H 5400 3400 50  0001 C CNN
+F 1 "+3.3V" H 5415 3723 50  0000 C CNN
+F 2 "" H 5400 3550 50  0001 C CNN
+F 3 "" H 5400 3550 50  0001 C CNN
+	1    5400 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3650 5050 3900
+Wire Wire Line
+	5800 3650 5800 3950
+$Comp
+L power:+5V #PWR?
+U 1 1 6050CCA4
+P 2100 2200
+F 0 "#PWR?" H 2100 2050 50  0001 C CNN
+F 1 "+5V" H 2115 2373 50  0000 C CNN
+F 2 "" H 2100 2200 50  0001 C CNN
+F 3 "" H 2100 2200 50  0001 C CNN
+	1    2100 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2200 2100 2400
+Wire Wire Line
+	2100 2400 2350 2400
+Text Notes 1900 1950 0    50   ~ 0
+from USB
+$Comp
+L power:GND #PWR?
+U 1 1 6050FCC4
+P 3750 5100
+F 0 "#PWR?" H 3750 4850 50  0001 C CNN
+F 1 "GND" H 3755 4927 50  0000 C CNN
+F 2 "" H 3750 5100 50  0001 C CNN
+F 3 "" H 3750 5100 50  0001 C CNN
+	1    3750 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 6051093E
+P 3750 4850
+F 0 "R3" H 3820 4896 50  0000 L CNN
+F 1 "10k" H 3820 4805 50  0000 L CNN
+F 2 "" V 3680 4850 50  0001 C CNN
+F 3 "~" H 3750 4850 50  0001 C CNN
+	1    3750 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4600 3750 4700
+Wire Wire Line
+	3750 5000 3750 5100
+Wire Wire Line
+	5400 4450 5400 4700
+Text GLabel 5700 4700 2    50   Input ~ 0
+BOOT0
+Wire Wire Line
+	5400 4700 5700 4700
+Connection ~ 5400 4700
+Wire Wire Line
+	5400 4700 5400 4900
+Text GLabel 3200 1500 2    50   Output ~ 0
+BOOT0
+Wire Wire Line
+	3050 1700 3050 1500
+Wire Wire Line
+	3050 1500 3200 1500
+Text GLabel 4600 2900 2    50   Output ~ 0
+RX
+Text GLabel 4600 2800 2    50   Input ~ 0
+TX
+Wire Wire Line
+	4450 2800 4600 2800
+Wire Wire Line
+	4450 2900 4600 2900
+$EndSCHEMATC

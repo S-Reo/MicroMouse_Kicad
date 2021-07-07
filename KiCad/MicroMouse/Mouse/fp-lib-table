@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Mouse_foot)(type KiCad)(uri ${KIPRJMOD}/Mouse_foot.pretty)(options "")(descr ""))
+  (lib (name DRV8835DSSR)(type KiCad)(uri ${KIPRJMOD}/Mouse_foot.pretty/DRV8835DSSR.pretty)(options "")(descr ""))
+)

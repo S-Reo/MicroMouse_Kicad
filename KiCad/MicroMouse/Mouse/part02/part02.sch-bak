@@ -1,0 +1,3181 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR?
+U 1 1 618E0A4B
+P 8900 1150
+AR Path="/6181BDB7/618E0A4B" Ref="#PWR?"  Part="1" 
+AR Path="/618E0A4B" Ref="#PWR037"  Part="1" 
+F 0 "#PWR037" H 8900 1000 50  0001 C CNN
+F 1 "+5V" H 8915 1323 50  0000 C CNN
+F 2 "" H 8900 1150 50  0001 C CNN
+F 3 "" H 8900 1150 50  0001 C CNN
+	1    8900 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0A51
+P 6250 2550
+AR Path="/6181BDB7/618E0A51" Ref="#PWR?"  Part="1" 
+AR Path="/618E0A51" Ref="#PWR029"  Part="1" 
+F 0 "#PWR029" H 6250 2300 50  0001 C CNN
+F 1 "GND" H 6255 2377 50  0000 C CNN
+F 2 "" H 6250 2550 50  0001 C CNN
+F 3 "" H 6250 2550 50  0001 C CNN
+	1    6250 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2350 6250 2450
+Wire Wire Line
+	7850 1550 7850 2450
+Connection ~ 6250 2450
+Wire Wire Line
+	6250 2450 6250 2550
+$Comp
+L Device:R R?
+U 1 1 618E0A5C
+P 8900 1500
+AR Path="/6181BDB7/618E0A5C" Ref="R?"  Part="1" 
+AR Path="/618E0A5C" Ref="R8"  Part="1" 
+F 0 "R8" H 8970 1546 50  0000 L CNN
+F 1 "54.9k_1%" H 8970 1455 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 8830 1500 50  0001 C CNN
+F 3 "~" H 8900 1500 50  0001 C CNN
+	1    8900 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 618E0A62
+P 8900 2100
+AR Path="/6181BDB7/618E0A62" Ref="R?"  Part="1" 
+AR Path="/618E0A62" Ref="R9"  Part="1" 
+F 0 "R9" H 8970 2146 50  0000 L CNN
+F 1 "10k_1%" H 8970 2055 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 8830 2100 50  0001 C CNN
+F 3 "~" H 8900 2100 50  0001 C CNN
+	1    8900 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 618E0A68
+P 5300 2050
+AR Path="/6181BDB7/618E0A68" Ref="R?"  Part="1" 
+AR Path="/618E0A68" Ref="R6"  Part="1" 
+F 0 "R6" V 5093 2050 50  0000 C CNN
+F 1 "10k" V 5184 2050 50  0000 C CNN
+F 2 "Mouse_foot:RESC1608X55N" V 5230 2050 50  0001 C CNN
+F 3 "~" H 5300 2050 50  0001 C CNN
+	1    5300 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 1750 5450 1750
+Wire Wire Line
+	4500 1600 4500 2450
+Wire Wire Line
+	4500 2450 6250 2450
+Wire Wire Line
+	8900 1650 8900 1800
+Wire Wire Line
+	8900 2250 8900 2450
+Wire Wire Line
+	8900 2450 7850 2450
+Connection ~ 7850 2450
+Connection ~ 8900 1800
+Wire Wire Line
+	8900 1800 8900 1950
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 618E0A78
+P 7600 1350
+AR Path="/6181BDB7/618E0A78" Ref="L?"  Part="1" 
+AR Path="/618E0A78" Ref="L1"  Part="1" 
+F 0 "L1" H 7600 1565 50  0000 C CNN
+F 1 "10μ" H 7600 1474 50  0000 C CNN
+F 2 "Mouse_foot:DFE2HCAH1R0MJ0L" H 7600 1350 50  0001 C CNN
+F 3 "~" H 7600 1350 50  0001 C CNN
+	1    7600 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 1350 7350 1650
+Wire Wire Line
+	6950 1500 6950 1350
+Wire Wire Line
+	6950 1350 7350 1350
+Wire Wire Line
+	5550 1400 5550 1550
+Wire Wire Line
+	1750 1200 1750 1150
+Wire Wire Line
+	1550 1700 1550 1850
+Wire Wire Line
+	1550 1600 1350 1600
+Wire Wire Line
+	1350 1250 1550 1250
+$Comp
+L part02-rescue:PHR-2-Mouse J?
+U 1 1 618E0A87
+P 1150 1700
+AR Path="/6181BDB7/618E0A87" Ref="J?"  Part="1" 
+AR Path="/618E0A87" Ref="J2"  Part="1" 
+F 0 "J2" H 1068 1375 50  0000 C CNN
+F 1 "PHR-2" H 1068 1466 50  0000 C CNN
+F 2 "Mouse_foot:SHDR2W50P0X200_1X2_590X450X600P" H 1150 1700 50  0001 C CNN
+F 3 "~" H 1150 1700 50  0001 C CNN
+	1    1150 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L part02-rescue:PHR-2-Mouse J?
+U 1 1 618E0A8D
+P 1150 1250
+AR Path="/6181BDB7/618E0A8D" Ref="J?"  Part="1" 
+AR Path="/618E0A8D" Ref="J1"  Part="1" 
+F 0 "J1" H 1068 925 50  0000 C CNN
+F 1 "PHR-2" H 1068 1016 50  0000 C CNN
+F 2 "Mouse_foot:SHDR2W50P0X200_1X2_590X450X600P" H 1150 1250 50  0001 C CNN
+F 3 "~" H 1150 1250 50  0001 C CNN
+	1    1150 1250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2200 1550 2200 1650
+Wire Wire Line
+	1750 1550 2200 1550
+Wire Wire Line
+	1750 1500 1750 1550
+$Comp
+L Device:R R?
+U 1 1 618E0A96
+P 1750 1350
+AR Path="/6181BDB7/618E0A96" Ref="R?"  Part="1" 
+AR Path="/618E0A96" Ref="R1"  Part="1" 
+F 0 "R1" H 1820 1396 50  0000 L CNN
+F 1 "10k" H 1820 1305 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 1680 1350 50  0001 C CNN
+F 3 "~" H 1750 1350 50  0001 C CNN
+	1    1750 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0A9C
+P 1550 1850
+AR Path="/6181BDB7/618E0A9C" Ref="#PWR?"  Part="1" 
+AR Path="/618E0A9C" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 1550 1600 50  0001 C CNN
+F 1 "GND" H 1555 1677 50  0000 C CNN
+F 2 "" H 1550 1850 50  0001 C CNN
+F 3 "" H 1550 1850 50  0001 C CNN
+	1    1550 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0AA2
+P 2600 2100
+AR Path="/6181BDB7/618E0AA2" Ref="#PWR?"  Part="1" 
+AR Path="/618E0AA2" Ref="#PWR010"  Part="1" 
+F 0 "#PWR010" H 2600 1850 50  0001 C CNN
+F 1 "GND" H 2605 1927 50  0000 C CNN
+F 2 "" H 2600 2100 50  0001 C CNN
+F 3 "" H 2600 2100 50  0001 C CNN
+	1    2600 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 618E0AA8
+P 2650 900
+AR Path="/6181BDB7/618E0AA8" Ref="#PWR?"  Part="1" 
+AR Path="/618E0AA8" Ref="#PWR011"  Part="1" 
+F 0 "#PWR011" H 2650 750 50  0001 C CNN
+F 1 "+BATT" H 2665 1073 50  0000 C CNN
+F 2 "" H 2650 900 50  0001 C CNN
+F 3 "" H 2650 900 50  0001 C CNN
+	1    2650 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_MEC_5G SW?
+U 1 1 618E0AAE
+P 1900 7650
+AR Path="/6181BDB7/618E0AAE" Ref="SW?"  Part="1" 
+AR Path="/618E0AAE" Ref="SW1"  Part="1" 
+F 0 "SW1" V 1946 7602 50  0000 R CNN
+F 1 "SW_MEC_5G" V 1855 7602 50  0000 R CNN
+F 2 "Mouse_foot:SKRPABE010" H 1900 7850 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 1900 7850 50  0001 C CNN
+	1    1900 7650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0AB4
+P 1900 7850
+AR Path="/6181BDB7/618E0AB4" Ref="#PWR?"  Part="1" 
+AR Path="/618E0AB4" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 1900 7600 50  0001 C CNN
+F 1 "GND" H 1905 7677 50  0000 C CNN
+F 2 "" H 1900 7850 50  0001 C CNN
+F 3 "" H 1900 7850 50  0001 C CNN
+	1    1900 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0ABA
+P 2450 7800
+AR Path="/6181BDB7/618E0ABA" Ref="#PWR?"  Part="1" 
+AR Path="/618E0ABA" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 2450 7550 50  0001 C CNN
+F 1 "GND" H 2455 7627 50  0000 C CNN
+F 2 "" H 2450 7800 50  0001 C CNN
+F 3 "" H 2450 7800 50  0001 C CNN
+	1    2450 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 7650 2450 7800
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 618E0AC1
+P 1500 7950
+AR Path="/6181BDB7/618E0AC1" Ref="FB?"  Part="1" 
+AR Path="/618E0AC1" Ref="FB1"  Part="1" 
+F 0 "FB1" H 1150 7950 50  0000 L CNN
+F 1 "Ferrite_Bead" H 1000 7800 50  0000 L CNN
+F 2 "Mouse_foot:BEADC1608X100N" V 1430 7950 50  0001 C CNN
+F 3 "~" H 1500 7950 50  0001 C CNN
+	1    1500 7950
+	1    0    0    -1  
+$EndComp
+Text GLabel 5000 2050 0    50   Input ~ 0
+EN
+Text GLabel 3200 7200 0    50   Input ~ 0
+PR-RCV-SL
+Text GLabel 3200 7400 0    50   Input ~ 0
+PR-RCV-FL
+Text GLabel 5450 9450 3    50   Input ~ 0
+PR-RCV-SR
+Text GLabel 7500 7600 2    50   Output ~ 0
+LED_1
+Text GLabel 5850 5050 1    50   Output ~ 0
+NCS
+Text GLabel 6450 5050 1    50   Output ~ 0
+SCLK
+Text GLabel 6050 5050 1    50   Output ~ 0
+SDIO_N
+Text GLabel 6250 5050 1    50   Input ~ 0
+SDIO_P
+Text GLabel 7600 8000 2    50   Output ~ 0
+PR-LED-SL-FR
+Text GLabel 4650 9450 3    50   Output ~ 0
+PR-LED-SR-FL
+Text GLabel 7600 7200 2    50   Input ~ 0
+ENC-L-A
+Text GLabel 7600 7000 2    50   Input ~ 0
+ENC-L-B
+Text GLabel 4850 9450 3    50   Input ~ 0
+ENC-R-A
+Text GLabel 5050 9450 3    50   Input ~ 0
+ENC-R-B
+Wire Wire Line
+	10550 10100 10550 10050
+Wire Wire Line
+	10550 10050 10750 10050
+Wire Wire Line
+	10550 10600 10550 10650
+Wire Wire Line
+	10550 10650 10750 10650
+Text GLabel 3050 8400 0    50   Output ~ 0
+MT-B-IN
+Text GLabel 3050 8600 0    50   Output ~ 0
+MT-B-ENBL
+$Comp
+L power:GND #PWR?
+U 1 1 618E0AE8
+P 6350 3650
+AR Path="/6181BDB7/618E0AE8" Ref="#PWR?"  Part="1" 
+AR Path="/618E0AE8" Ref="#PWR030"  Part="1" 
+F 0 "#PWR030" H 6350 3400 50  0001 C CNN
+F 1 "GND" H 6355 3477 50  0000 C CNN
+F 2 "" H 6350 3650 50  0001 C CNN
+F 3 "" H 6350 3650 50  0001 C CNN
+	1    6350 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 618E0AEE
+P 2950 1400
+AR Path="/6181BDB7/618E0AEE" Ref="R?"  Part="1" 
+AR Path="/618E0AEE" Ref="R2"  Part="1" 
+F 0 "R2" H 3020 1446 50  0000 L CNN
+F 1 "20k" H 3020 1355 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 2880 1400 50  0001 C CNN
+F 3 "~" H 2950 1400 50  0001 C CNN
+	1    2950 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 618E0AF4
+P 2950 1950
+AR Path="/6181BDB7/618E0AF4" Ref="R?"  Part="1" 
+AR Path="/618E0AF4" Ref="R3"  Part="1" 
+F 0 "R3" H 3020 1996 50  0000 L CNN
+F 1 "10k" H 3020 1905 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 2880 1950 50  0001 C CNN
+F 3 "~" H 2950 1950 50  0001 C CNN
+	1    2950 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0AFA
+P 2950 2200
+AR Path="/6181BDB7/618E0AFA" Ref="#PWR?"  Part="1" 
+AR Path="/618E0AFA" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 2950 1950 50  0001 C CNN
+F 1 "GND" H 2955 2027 50  0000 C CNN
+F 2 "" H 2950 2200 50  0001 C CNN
+F 3 "" H 2950 2200 50  0001 C CNN
+	1    2950 2200
+	1    0    0    -1  
+$EndComp
+Text GLabel 5850 10500 3    50   Input ~ 0
+BAT-VOL
+Text GLabel 6450 4050 3    50   Input ~ 0
+USART-TX
+Text GLabel 6250 4050 3    50   Output ~ 0
+USART-RX
+Text GLabel 10800 8500 2    50   Output ~ 0
+ENC-R-A
+Text GLabel 10800 9100 2    50   Output ~ 0
+ENC-R-B
+Text GLabel 10750 10050 2    50   Output ~ 0
+ENC-L-A
+Text GLabel 10750 10650 2    50   Output ~ 0
+ENC-L-B
+Text GLabel 3150 1700 2    50   Output ~ 0
+BAT-VOL
+$Comp
+L power:GND #PWR?
+U 1 1 618E0B09
+P 6050 9850
+AR Path="/6181BDB7/618E0B09" Ref="#PWR?"  Part="1" 
+AR Path="/618E0B09" Ref="#PWR028"  Part="1" 
+F 0 "#PWR028" H 6050 9600 50  0001 C CNN
+F 1 "GND" H 6055 9677 50  0000 C CNN
+F 2 "" H 6050 9850 50  0001 C CNN
+F 3 "" H 6050 9850 50  0001 C CNN
+	1    6050 9850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 618E0B0F
+P 6050 9600
+AR Path="/6181BDB7/618E0B0F" Ref="R?"  Part="1" 
+AR Path="/618E0B0F" Ref="R7"  Part="1" 
+F 0 "R7" V 6100 9750 50  0000 L CNN
+F 1 "10k" V 6000 9750 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 5980 9600 50  0001 C CNN
+F 3 "~" H 6050 9600 50  0001 C CNN
+	1    6050 9600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 9450 6050 9350
+Wire Wire Line
+	1900 7450 1900 7350
+Wire Wire Line
+	1900 7350 2450 7350
+Wire Wire Line
+	2450 7450 2450 7350
+Connection ~ 2450 7350
+$Comp
+L Switch:SW_MEC_5G SW?
+U 1 1 618E0B1A
+P 4350 3350
+AR Path="/6181BDB7/618E0B1A" Ref="SW?"  Part="1" 
+AR Path="/618E0B1A" Ref="SW3"  Part="1" 
+F 0 "SW3" V 4396 3302 50  0000 R CNN
+F 1 "SW_MEC_5G" V 4305 3302 50  0000 R CNN
+F 2 "Mouse_foot:SKRPABE010" H 4350 3550 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 4350 3550 50  0001 C CNN
+	1    4350 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0B20
+P 4350 4050
+AR Path="/6181BDB7/618E0B20" Ref="#PWR?"  Part="1" 
+AR Path="/618E0B20" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 4350 3800 50  0001 C CNN
+F 1 "GND" H 4355 3877 50  0000 C CNN
+F 2 "" H 4350 4050 50  0001 C CNN
+F 3 "" H 4350 4050 50  0001 C CNN
+	1    4350 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 4650 3850 3    50   Output ~ 0
+USR3_BOOT
+$Comp
+L Device:R R?
+U 1 1 618E0B27
+P 4350 3800
+AR Path="/6181BDB7/618E0B27" Ref="R?"  Part="1" 
+AR Path="/618E0B27" Ref="R5"  Part="1" 
+F 0 "R5" V 4550 3750 50  0000 L CNN
+F 1 "10k" V 4450 3750 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 4280 3800 50  0001 C CNN
+F 3 "~" H 4350 3800 50  0001 C CNN
+	1    4350 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 618E0B2D
+P 4350 3050
+AR Path="/6181BDB7/618E0B2D" Ref="#PWR?"  Part="1" 
+AR Path="/618E0B2D" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 4350 2900 50  0001 C CNN
+F 1 "+3.3V" H 4365 3223 50  0000 C CNN
+F 2 "" H 4350 3050 50  0001 C CNN
+F 3 "" H 4350 3050 50  0001 C CNN
+	1    4350 3050
+	1    0    0    -1  
+$EndComp
+Text GLabel 4650 5100 1    50   Input ~ 0
+USR3_BOOT
+Text Notes 4350 800  0    167  ~ 33
+POWER
+Text Notes 13300 3600 0    167  ~ 33
+IR_LED
+Text GLabel 12600 2600 3    50   Input ~ 0
+NCS
+Text GLabel 13100 2600 3    50   Input ~ 0
+SDIO_P
+Text GLabel 13350 2600 3    50   Output ~ 0
+SDIO_N
+Text GLabel 12850 2600 3    50   Input ~ 0
+SCLK
+Wire Wire Line
+	13450 2900 13450 2800
+$Comp
+L power:GND #PWR?
+U 1 1 618E0B3B
+P 13450 2900
+AR Path="/6181BDB7/618E0B3B" Ref="#PWR?"  Part="1" 
+AR Path="/618E0B3B" Ref="#PWR067"  Part="1" 
+F 0 "#PWR067" H 13450 2650 50  0001 C CNN
+F 1 "GND" H 13455 2727 50  0000 C CNN
+F 2 "" H 13450 2900 50  0001 C CNN
+F 3 "" H 13450 2900 50  0001 C CNN
+	1    13450 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0B42
+P 15200 2800
+AR Path="/6181BDB7/618E0B42" Ref="#PWR?"  Part="1" 
+AR Path="/618E0B42" Ref="#PWR075"  Part="1" 
+F 0 "#PWR075" H 15200 2550 50  0001 C CNN
+F 1 "GND" H 15205 2627 50  0000 C CNN
+F 2 "" H 15200 2800 50  0001 C CNN
+F 3 "" H 15200 2800 50  0001 C CNN
+	1    15200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15300 1350 15300 1500
+$Comp
+L power:+3.3V #PWR?
+U 1 1 618E0B4A
+P 15300 1350
+AR Path="/6181BDB7/618E0B4A" Ref="#PWR?"  Part="1" 
+AR Path="/618E0B4A" Ref="#PWR076"  Part="1" 
+F 0 "#PWR076" H 15300 1200 50  0001 C CNN
+F 1 "+3.3V" H 15315 1523 50  0000 C CNN
+F 2 "" H 15300 1350 50  0001 C CNN
+F 3 "" H 15300 1350 50  0001 C CNN
+	1    15300 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15750 1450 15750 1400
+$Comp
+L power:GND #PWR?
+U 1 1 618E0B51
+P 15750 1750
+AR Path="/6181BDB7/618E0B51" Ref="#PWR?"  Part="1" 
+AR Path="/618E0B51" Ref="#PWR081"  Part="1" 
+F 0 "#PWR081" H 15750 1500 50  0001 C CNN
+F 1 "GND" H 15755 1577 50  0000 C CNN
+F 2 "" H 15750 1750 50  0001 C CNN
+F 3 "" H 15750 1750 50  0001 C CNN
+	1    15750 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 618E0B57
+P 15300 1650
+AR Path="/6181BDB7/618E0B57" Ref="C?"  Part="1" 
+AR Path="/618E0B57" Ref="C29"  Part="1" 
+F 0 "C29" H 15415 1696 50  0000 L CNN
+F 1 "0.1μ" H 15415 1605 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 15338 1500 50  0001 C CNN
+F 3 "~" H 15300 1650 50  0001 C CNN
+	1    15300 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0B5D
+P 15300 1800
+AR Path="/6181BDB7/618E0B5D" Ref="#PWR?"  Part="1" 
+AR Path="/618E0B5D" Ref="#PWR077"  Part="1" 
+F 0 "#PWR077" H 15300 1550 50  0001 C CNN
+F 1 "GND" H 15305 1627 50  0000 C CNN
+F 2 "" H 15300 1800 50  0001 C CNN
+F 3 "" H 15300 1800 50  0001 C CNN
+	1    15300 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 618E0B63
+P 15750 1600
+AR Path="/6181BDB7/618E0B63" Ref="C?"  Part="1" 
+AR Path="/618E0B63" Ref="C30"  Part="1" 
+F 0 "C30" H 15865 1646 50  0000 L CNN
+F 1 "0.1μ" H 15865 1555 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 15788 1450 50  0001 C CNN
+F 3 "~" H 15750 1600 50  0001 C CNN
+	1    15750 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 618E0B69
+P 15750 1350
+AR Path="/6181BDB7/618E0B69" Ref="#PWR?"  Part="1" 
+AR Path="/618E0B69" Ref="#PWR080"  Part="1" 
+F 0 "#PWR080" H 15750 1200 50  0001 C CNN
+F 1 "+3.3V" H 15765 1523 50  0000 C CNN
+F 2 "" H 15750 1350 50  0001 C CNN
+F 3 "" H 15750 1350 50  0001 C CNN
+	1    15750 1350
+	1    0    0    -1  
+$EndComp
+Text Notes 13900 1050 0    168  ~ 34
+IMU
+Text Notes 4250 7400 0    168  ~ 34
+STM32F405RGT6
+Wire Wire Line
+	2950 1550 2950 1700
+$Comp
+L part02-rescue:TPS562200DDCR-Mouse U?
+U 1 1 618E0B72
+P 6250 1650
+AR Path="/6181BDB7/618E0B72" Ref="U?"  Part="1" 
+AR Path="/618E0B72" Ref="U3"  Part="1" 
+F 0 "U3" H 6250 2320 50  0000 C CNN
+F 1 "TPS562200DDCR" H 6250 2229 50  0000 C CNN
+F 2 "Mouse_foot:SOT95P280X110-6N" H 6250 1650 50  0001 L BNN
+F 3 "" H 6250 1650 50  0001 L BNN
+	1    6250 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2100 2950 2200
+Connection ~ 2950 1700
+Wire Wire Line
+	2950 1700 2950 1800
+Wire Wire Line
+	10550 8550 10550 8500
+Wire Wire Line
+	10550 8500 10800 8500
+Wire Wire Line
+	10550 9050 10550 9100
+Wire Wire Line
+	10550 9100 10800 9100
+Wire Wire Line
+	2950 1700 3150 1700
+NoConn ~ 2600 1550
+$Comp
+L Switch:SW_DPDT_x2 SW?
+U 1 1 618E0B81
+P 2400 1650
+AR Path="/6181BDB7/618E0B81" Ref="SW?"  Part="1" 
+AR Path="/618E0B81" Ref="SW2"  Part="1" 
+F 0 "SW2" H 2400 1950 50  0000 C CNN
+F 1 "SS12D01G4" H 2550 1850 50  0000 C CNN
+F 2 "Mouse_foot:SW_SS12D01G4" H 2400 1650 50  0001 C CNN
+F 3 "~" H 2400 1650 50  0001 C CNN
+	1    2400 1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 3150 1150 2    50   Output ~ 0
+EN
+Wire Wire Line
+	3150 1150 2950 1150
+Wire Wire Line
+	2950 1150 2950 1250
+Wire Wire Line
+	1500 7500 1500 7750
+Wire Wire Line
+	5000 2050 5150 2050
+Wire Wire Line
+	6950 1650 7000 1650
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 618E0B8D
+P 6950 2150
+AR Path="/6181BDB7/618E0B8D" Ref="#FLG?"  Part="1" 
+AR Path="/618E0B8D" Ref="#FLG04"  Part="1" 
+F 0 "#FLG04" H 6950 2225 50  0001 C CNN
+F 1 "PWR_FLAG" H 6950 2323 50  0000 C CNN
+F 2 "" H 6950 2150 50  0001 C CNN
+F 3 "~" H 6950 2150 50  0001 C CNN
+	1    6950 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 618E0B93
+P 4500 1100
+AR Path="/6181BDB7/618E0B93" Ref="#PWR?"  Part="1" 
+AR Path="/618E0B93" Ref="#PWR025"  Part="1" 
+F 0 "#PWR025" H 4500 950 50  0001 C CNN
+F 1 "+BATT" H 4515 1273 50  0000 C CNN
+F 2 "" H 4500 1100 50  0001 C CNN
+F 3 "" H 4500 1100 50  0001 C CNN
+	1    4500 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 900  2650 1150
+Wire Wire Line
+	6250 2450 7850 2450
+Wire Wire Line
+	4500 1100 4500 1400
+Wire Wire Line
+	8900 1150 8900 1250
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 618E0B9D
+P 800 1800
+AR Path="/6181BDB7/618E0B9D" Ref="#FLG?"  Part="1" 
+AR Path="/618E0B9D" Ref="#FLG02"  Part="1" 
+F 0 "#FLG02" H 800 1875 50  0001 C CNN
+F 1 "PWR_FLAG" H 800 1973 50  0000 C CNN
+F 2 "" H 800 1800 50  0001 C CNN
+F 3 "~" H 800 1800 50  0001 C CNN
+	1    800  1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 1750 2600 2100
+Wire Wire Line
+	1350 1700 1550 1700
+Wire Wire Line
+	1350 1150 1750 1150
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 618E0BA6
+P 800 1300
+AR Path="/6181BDB7/618E0BA6" Ref="#FLG?"  Part="1" 
+AR Path="/618E0BA6" Ref="#FLG01"  Part="1" 
+F 0 "#FLG01" H 800 1375 50  0001 C CNN
+F 1 "PWR_FLAG" H 800 1473 50  0000 C CNN
+F 2 "" H 800 1300 50  0001 C CNN
+F 3 "~" H 800 1300 50  0001 C CNN
+	1    800  1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0BAC
+P 800 1950
+AR Path="/6181BDB7/618E0BAC" Ref="#PWR?"  Part="1" 
+AR Path="/618E0BAC" Ref="#PWR02"  Part="1" 
+F 0 "#PWR02" H 800 1700 50  0001 C CNN
+F 1 "GND" H 805 1777 50  0000 C CNN
+F 2 "" H 800 1950 50  0001 C CNN
+F 3 "" H 800 1950 50  0001 C CNN
+	1    800  1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  1800 800  1950
+$Comp
+L power:+BATT #PWR?
+U 1 1 618E0BB3
+P 800 1050
+AR Path="/6181BDB7/618E0BB3" Ref="#PWR?"  Part="1" 
+AR Path="/618E0BB3" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 800 900 50  0001 C CNN
+F 1 "+BATT" H 815 1223 50  0000 C CNN
+F 2 "" H 800 1050 50  0001 C CNN
+F 3 "" H 800 1050 50  0001 C CNN
+	1    800  1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  1050 800  1300
+$Comp
+L Device:C_Small C?
+U 1 1 618E0BBA
+P 6200 10300
+AR Path="/6181BDB7/618E0BBA" Ref="C?"  Part="1" 
+AR Path="/618E0BBA" Ref="C8"  Part="1" 
+F 0 "C8" H 5950 10350 50  0000 L CNN
+F 1 "0.1μ" H 5950 10250 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 6200 10300 50  0001 C CNN
+F 3 "~" H 6200 10300 50  0001 C CNN
+	1    6200 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0BC0
+P 6200 10600
+AR Path="/6181BDB7/618E0BC0" Ref="#PWR?"  Part="1" 
+AR Path="/618E0BC0" Ref="#PWR026"  Part="1" 
+F 0 "#PWR026" H 6200 10350 50  0001 C CNN
+F 1 "GND" H 6205 10427 50  0000 C CNN
+F 2 "" H 6200 10600 50  0001 C CNN
+F 3 "" H 6200 10600 50  0001 C CNN
+	1    6200 10600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 10400 6200 10600
+$Comp
+L power:+3.3V #PWR?
+U 1 1 618E0BC7
+P 14800 8650
+AR Path="/6181BDB7/618E0BC7" Ref="#PWR?"  Part="1" 
+AR Path="/618E0BC7" Ref="#PWR071"  Part="1" 
+F 0 "#PWR071" H 14800 8500 50  0001 C CNN
+F 1 "+3.3V" H 14815 8823 50  0000 C CNN
+F 2 "" H 14800 8650 50  0001 C CNN
+F 3 "" H 14800 8650 50  0001 C CNN
+	1    14800 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 618E0BCD
+P 14800 9350
+AR Path="/6181BDB7/618E0BCD" Ref="R?"  Part="1" 
+AR Path="/618E0BCD" Ref="R24"  Part="1" 
+F 0 "R24" H 14870 9396 50  0000 L CNN
+F 1 "10k" H 14870 9305 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 14730 9350 50  0001 C CNN
+F 3 "~" H 14800 9350 50  0001 C CNN
+	1    14800 9350
+	-1   0    0    1   
+$EndComp
+Text GLabel 15300 9100 2    50   Input ~ 0
+BUTTON
+$Comp
+L power:GND #PWR?
+U 1 1 618E0BD4
+P 14800 9650
+AR Path="/6181BDB7/618E0BD4" Ref="#PWR?"  Part="1" 
+AR Path="/618E0BD4" Ref="#PWR072"  Part="1" 
+F 0 "#PWR072" H 14800 9400 50  0001 C CNN
+F 1 "GND" H 14805 9477 50  0000 C CNN
+F 2 "" H 14800 9650 50  0001 C CNN
+F 3 "" H 14800 9650 50  0001 C CNN
+	1    14800 9650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_MEC_5G SW?
+U 1 1 618E0BDA
+P 14800 8900
+AR Path="/6181BDB7/618E0BDA" Ref="SW?"  Part="1" 
+AR Path="/618E0BDA" Ref="SW4"  Part="1" 
+F 0 "SW4" V 14846 8852 50  0000 R CNN
+F 1 "SW_MEC_5G" V 14755 8852 50  0000 R CNN
+F 2 "Mouse_foot:SKRPABE010" H 14800 9100 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 14800 9100 50  0001 C CNN
+	1    14800 8900
+	0    -1   -1   0   
+$EndComp
+Text Notes 13550 8550 0    168  ~ 34
+UI
+$Comp
+L Device:R R?
+U 1 1 618E0C39
+P 13100 1750
+AR Path="/6181BDB7/618E0C39" Ref="R?"  Part="1" 
+AR Path="/618E0C39" Ref="R16"  Part="1" 
+F 0 "R16" H 13170 1796 50  0000 L CNN
+F 1 "4.7k" H 13170 1705 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 13030 1750 50  0001 C CNN
+F 3 "~" H 13100 1750 50  0001 C CNN
+	1    13100 1750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13350 1650 13350 2450
+$Comp
+L Device:R R?
+U 1 1 618E0C40
+P 13350 1500
+AR Path="/6181BDB7/618E0C40" Ref="R?"  Part="1" 
+AR Path="/618E0C40" Ref="R19"  Part="1" 
+F 0 "R19" H 13420 1546 50  0000 L CNN
+F 1 "4.7k" H 13420 1455 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 13280 1500 50  0001 C CNN
+F 3 "~" H 13350 1500 50  0001 C CNN
+	1    13350 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 618E0C46
+P 12600 1200
+AR Path="/6181BDB7/618E0C46" Ref="#PWR?"  Part="1" 
+AR Path="/618E0C46" Ref="#PWR061"  Part="1" 
+F 0 "#PWR061" H 12600 1050 50  0001 C CNN
+F 1 "+3.3V" H 12615 1373 50  0000 C CNN
+F 2 "" H 12600 1200 50  0001 C CNN
+F 3 "" H 12600 1200 50  0001 C CNN
+	1    12600 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12600 1200 12600 1250
+Connection ~ 12600 1250
+Wire Wire Line
+	13100 1250 13350 1250
+Connection ~ 13100 1250
+Wire Wire Line
+	13100 1250 13100 1600
+Wire Wire Line
+	13350 1250 13350 1350
+Wire Wire Line
+	12600 1250 12850 1250
+Wire Wire Line
+	12600 1250 12600 1600
+Wire Wire Line
+	14900 1500 15300 1500
+NoConn ~ 13500 1400
+NoConn ~ 13500 1500
+Wire Wire Line
+	14900 2300 15200 2300
+NoConn ~ 14900 2000
+Wire Wire Line
+	14900 2800 15200 2800
+Wire Wire Line
+	14900 1400 15750 1400
+Wire Wire Line
+	13450 2800 13500 2800
+$Comp
+L Device:C C?
+U 1 1 618E0C5F
+P 15050 2500
+AR Path="/6181BDB7/618E0C5F" Ref="C?"  Part="1" 
+AR Path="/618E0C5F" Ref="C28"  Part="1" 
+F 0 "C28" V 15302 2500 50  0000 C CNN
+F 1 "0.1μ" V 15211 2500 50  0000 C CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 15088 2350 50  0001 C CNN
+F 3 "~" H 15050 2500 50  0001 C CNN
+	1    15050 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12600 1900 12600 2000
+$Comp
+L Device:R R?
+U 1 1 618E0C66
+P 12600 1750
+AR Path="/6181BDB7/618E0C66" Ref="R?"  Part="1" 
+AR Path="/618E0C66" Ref="R13"  Part="1" 
+F 0 "R13" H 12670 1796 50  0000 L CNN
+F 1 "4.7k" H 12670 1705 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 12530 1750 50  0001 C CNN
+F 3 "~" H 12600 1750 50  0001 C CNN
+	1    12600 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L part02-rescue:ICM-20648-Mouse U?
+U 1 1 618E0C73
+P 14200 2100
+AR Path="/6181BDB7/618E0C73" Ref="U?"  Part="1" 
+AR Path="/618E0C73" Ref="U5"  Part="1" 
+F 0 "U5" H 14200 3067 50  0000 C CNN
+F 1 "ICM-20648" H 14200 2976 50  0000 C CNN
+F 2 "Footprint:ICM20648" H 14200 2100 50  0001 L BNN
+F 3 "" H 14200 2100 50  0001 L BNN
+F 4 "ICM-20648" H 14200 2100 50  0001 L BNN "MP"
+F 5 "QFN-24 InvenSense" H 14200 2100 50  0001 L BNN "PACKAGE"
+F 6 "1428-1061-1-ND" H 14200 2100 50  0001 L BNN "DIGI-KEY_PART_NUMBER"
+F 7 "TDK InvenSense" H 14200 2100 50  0001 L BNN "MF"
+F 8 "6-Axis Gyro/Accel Integrated Sol" H 14200 2100 50  0001 L BNN "DESCRIPTION"
+F 9 "https://www.digikey.in/product-detail/en/tdk-invensense/ICM-20648/1428-1061-1-ND/5872876?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 14200 2100 50  0001 L BNN "DIGI-KEY_PURCHASE_URL"
+F 10 "The center Exposed Pad (EP), for MPU devices is a No Connect (NC) pad. To avoid package stress, do not solder the EP to the PCB. Please refer to the document “AN-IVS-0002A-00”. As a result of these guidelines, the exposed pad has not been included on the PCB footprint. We’ve added a keep-out area under the exposed pad. Please don’t route traces or vias under the part, on the same side of the board" H 14200 2100 50  0001 L BNN "NOTES"
+	1    14200 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12850 1650 12850 2150
+$Comp
+L Device:R R?
+U 1 1 618E0C7A
+P 12850 1500
+AR Path="/6181BDB7/618E0C7A" Ref="R?"  Part="1" 
+AR Path="/618E0C7A" Ref="R15"  Part="1" 
+F 0 "R15" H 12920 1546 50  0000 L CNN
+F 1 "4.7k" H 12920 1455 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 12780 1500 50  0001 C CNN
+F 3 "~" H 12850 1500 50  0001 C CNN
+	1    12850 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12850 1250 12850 1350
+Connection ~ 12850 1250
+Wire Wire Line
+	12850 1250 13100 1250
+Wire Wire Line
+	13500 2450 13350 2450
+Wire Wire Line
+	13500 2000 12600 2000
+Connection ~ 12600 2000
+Wire Wire Line
+	12600 2000 12600 2600
+Wire Wire Line
+	13500 2150 12850 2150
+Connection ~ 12850 2150
+Wire Wire Line
+	12850 2150 12850 2600
+Wire Wire Line
+	13500 2300 13100 2300
+Wire Wire Line
+	13100 1900 13100 2300
+Wire Wire Line
+	6950 1800 8900 1800
+Connection ~ 6950 1650
+Text GLabel 10150 10650 0    50   Input ~ 0
+BOUT1_MT
+Text GLabel 10150 10050 0    50   Input ~ 0
+BOUT2_MT
+Text GLabel 10100 9100 0    50   Input ~ 0
+AOUT1_MT
+Text GLabel 10100 8500 0    50   Input ~ 0
+AOUT2_MT
+Wire Wire Line
+	10350 9100 10100 9100
+Wire Wire Line
+	10350 9050 10350 9100
+Wire Wire Line
+	10350 8500 10350 8550
+Wire Wire Line
+	10100 8500 10350 8500
+Text Notes 10000 3450 0    167  ~ 33
+Motor driver
+Text Notes 9900 7900 0    167  ~ 33
+Encoder
+Wire Wire Line
+	10350 10650 10150 10650
+Wire Wire Line
+	10350 10600 10350 10650
+Wire Wire Line
+	10350 10050 10350 10100
+Wire Wire Line
+	10150 10050 10350 10050
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J?
+U 1 1 618E0C9F
+P 10450 8850
+AR Path="/6181BDB7/618E0C9F" Ref="J?"  Part="1" 
+AR Path="/618E0C9F" Ref="J4"  Part="1" 
+F 0 "J4" V 10546 8662 50  0000 R CNN
+F 1 "Conn_02x03_Odd_Even" V 10455 8662 50  0000 R CNN
+F 2 "Mouse_foot:Motor_Connecter" H 10450 8850 50  0001 C CNN
+F 3 "~" H 10450 8850 50  0001 C CNN
+	1    10450 8850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10450 9050 10450 9300
+Wire Wire Line
+	10450 8250 10450 8550
+Wire Wire Line
+	10450 10600 10450 10850
+Wire Wire Line
+	10450 9800 10450 10100
+$Comp
+L power:+5V #PWR?
+U 1 1 618E0CA9
+P 10450 9800
+AR Path="/6181BDB7/618E0CA9" Ref="#PWR?"  Part="1" 
+AR Path="/618E0CA9" Ref="#PWR044"  Part="1" 
+F 0 "#PWR044" H 10450 9650 50  0001 C CNN
+F 1 "+5V" H 10465 9973 50  0000 C CNN
+F 2 "" H 10450 9800 50  0001 C CNN
+F 3 "" H 10450 9800 50  0001 C CNN
+	1    10450 9800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0CAF
+P 10450 10850
+AR Path="/6181BDB7/618E0CAF" Ref="#PWR?"  Part="1" 
+AR Path="/618E0CAF" Ref="#PWR045"  Part="1" 
+F 0 "#PWR045" H 10450 10600 50  0001 C CNN
+F 1 "GND" H 10455 10677 50  0000 C CNN
+F 2 "" H 10450 10850 50  0001 C CNN
+F 3 "" H 10450 10850 50  0001 C CNN
+	1    10450 10850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J?
+U 1 1 618E0CB5
+P 10450 10400
+AR Path="/6181BDB7/618E0CB5" Ref="J?"  Part="1" 
+AR Path="/618E0CB5" Ref="J5"  Part="1" 
+F 0 "J5" V 10546 10212 50  0000 R CNN
+F 1 "Conn_02x03_Odd_Even" V 10455 10212 50  0000 R CNN
+F 2 "Mouse_foot:Motor_Connecter" H 10450 10400 50  0001 C CNN
+F 3 "~" H 10450 10400 50  0001 C CNN
+	1    10450 10400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 618E0CBB
+P 10450 8250
+AR Path="/6181BDB7/618E0CBB" Ref="#PWR?"  Part="1" 
+AR Path="/618E0CBB" Ref="#PWR042"  Part="1" 
+F 0 "#PWR042" H 10450 8100 50  0001 C CNN
+F 1 "+5V" H 10465 8423 50  0000 C CNN
+F 2 "" H 10450 8250 50  0001 C CNN
+F 3 "" H 10450 8250 50  0001 C CNN
+	1    10450 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0CC1
+P 10450 9300
+AR Path="/6181BDB7/618E0CC1" Ref="#PWR?"  Part="1" 
+AR Path="/618E0CC1" Ref="#PWR043"  Part="1" 
+F 0 "#PWR043" H 10450 9050 50  0001 C CNN
+F 1 "GND" H 10455 9127 50  0000 C CNN
+F 2 "" H 10450 9300 50  0001 C CNN
+F 3 "" H 10450 9300 50  0001 C CNN
+	1    10450 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L part02-rescue:TG2016SMN-Mouse U?
+U 1 1 618E0CC7
+P 2250 6500
+AR Path="/6181BDB7/618E0CC7" Ref="U?"  Part="1" 
+AR Path="/618E0CC7" Ref="U1"  Part="1" 
+F 0 "U1" H 2000 6350 50  0000 L CNN
+F 1 "TG2016SMN" H 1850 6200 50  0000 L CNN
+F 2 "Mouse_foot:TG2016SMN260000MMCGNNM" H 2250 6500 50  0001 C CNN
+F 3 "" H 2250 6500 50  0001 C CNN
+	1    2250 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0CCD
+P 2350 7000
+AR Path="/6181BDB7/618E0CCD" Ref="#PWR?"  Part="1" 
+AR Path="/618E0CCD" Ref="#PWR08"  Part="1" 
+F 0 "#PWR08" H 2350 6750 50  0001 C CNN
+F 1 "GND" H 2355 6827 50  0000 C CNN
+F 2 "" H 2350 7000 50  0001 C CNN
+F 3 "" H 2350 7000 50  0001 C CNN
+	1    2350 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 6850 2350 6950
+$Comp
+L Device:C_Small C?
+U 1 1 618E0CD4
+P 2000 6600
+AR Path="/6181BDB7/618E0CD4" Ref="C?"  Part="1" 
+AR Path="/618E0CD4" Ref="C2"  Part="1" 
+F 0 "C2" H 1750 6650 50  0000 L CNN
+F 1 "0.1μ" H 1750 6550 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 2000 6600 50  0001 C CNN
+F 3 "~" H 2000 6600 50  0001 C CNN
+	1    2000 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 6950 2000 6700
+Wire Wire Line
+	2000 6350 2000 6500
+Wire Wire Line
+	2350 6300 2350 6350
+Connection ~ 2350 6350
+Connection ~ 2350 6950
+Wire Wire Line
+	2350 6950 2350 7000
+Wire Wire Line
+	2350 6350 2000 6350
+$Comp
+L power:+3.3V #PWR?
+U 1 1 618E0CE1
+P 2350 6300
+AR Path="/6181BDB7/618E0CE1" Ref="#PWR?"  Part="1" 
+AR Path="/618E0CE1" Ref="#PWR07"  Part="1" 
+F 0 "#PWR07" H 2350 6150 50  0001 C CNN
+F 1 "+3.3V" H 2365 6473 50  0000 C CNN
+F 2 "" H 2350 6300 50  0001 C CNN
+F 3 "" H 2350 6300 50  0001 C CNN
+	1    2350 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1150 2950 1150
+Connection ~ 2950 1150
+$Comp
+L power:+BATT #PWR?
+U 1 1 618E0CE9
+P 3700 1100
+AR Path="/6181BDB7/618E0CE9" Ref="#PWR?"  Part="1" 
+AR Path="/618E0CE9" Ref="#PWR015"  Part="1" 
+F 0 "#PWR015" H 3700 950 50  0001 C CNN
+F 1 "+BATT" H 3715 1273 50  0000 C CNN
+F 2 "" H 3700 1100 50  0001 C CNN
+F 3 "" H 3700 1100 50  0001 C CNN
+	1    3700 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 618E0CEF
+P 4100 1100
+AR Path="/6181BDB7/618E0CEF" Ref="#PWR?"  Part="1" 
+AR Path="/618E0CEF" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 4100 950 50  0001 C CNN
+F 1 "+BATT" H 4115 1273 50  0000 C CNN
+F 2 "" H 4100 1100 50  0001 C CNN
+F 3 "" H 4100 1100 50  0001 C CNN
+	1    4100 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0CF5
+P 3700 2150
+AR Path="/6181BDB7/618E0CF5" Ref="#PWR?"  Part="1" 
+AR Path="/618E0CF5" Ref="#PWR016"  Part="1" 
+F 0 "#PWR016" H 3700 1900 50  0001 C CNN
+F 1 "GND" H 3705 1977 50  0000 C CNN
+F 2 "" H 3700 2150 50  0001 C CNN
+F 3 "" H 3700 2150 50  0001 C CNN
+	1    3700 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0CFB
+P 4100 2150
+AR Path="/6181BDB7/618E0CFB" Ref="#PWR?"  Part="1" 
+AR Path="/618E0CFB" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 4100 1900 50  0001 C CNN
+F 1 "GND" H 4105 1977 50  0000 C CNN
+F 2 "" H 4100 2150 50  0001 C CNN
+F 3 "" H 4100 2150 50  0001 C CNN
+	1    4100 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 618E0D01
+P 4100 1400
+AR Path="/6181BDB7/618E0D01" Ref="R?"  Part="1" 
+AR Path="/618E0D01" Ref="R4"  Part="1" 
+F 0 "R4" H 4170 1446 50  0000 L CNN
+F 1 "1k" H 4170 1355 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 4030 1400 50  0001 C CNN
+F 3 "~" H 4100 1400 50  0001 C CNN
+	1    4100 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener_ALT D?
+U 1 1 618E0D07
+P 3700 1550
+AR Path="/6181BDB7/618E0D07" Ref="D?"  Part="1" 
+AR Path="/618E0D07" Ref="D1"  Part="1" 
+F 0 "D1" V 3900 1450 50  0000 L CNN
+F 1 "KDZVTR9.1B" V 4100 1050 50  0000 L CNN
+F 2 "Mouse_foot:PMDU" H 3700 1550 50  0001 C CNN
+F 3 "~" H 3700 1550 50  0001 C CNN
+	1    3700 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 618E0D0D
+P 4100 1850
+AR Path="/6181BDB7/618E0D0D" Ref="D?"  Part="1" 
+AR Path="/618E0D0D" Ref="D2"  Part="1" 
+F 0 "D2" V 4139 1732 50  0000 R CNN
+F 1 "OSO50402C1C" V 4048 1732 50  0000 R CNN
+F 2 "Mouse_foot:LEDC1608X45N" H 4100 1850 50  0001 C CNN
+F 3 "~" H 4100 1850 50  0001 C CNN
+	1    4100 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4100 1550 4100 1700
+Wire Wire Line
+	4100 2000 4100 2150
+Wire Wire Line
+	4100 1100 4100 1250
+Wire Wire Line
+	3700 1100 3700 1400
+Wire Wire Line
+	3700 1700 3700 2150
+$Comp
+L power:+5V #PWR?
+U 1 1 618E0D1C
+P 15000 3800
+AR Path="/6181BDB7/618E0D1C" Ref="#PWR?"  Part="1" 
+AR Path="/618E0D1C" Ref="#PWR073"  Part="1" 
+F 0 "#PWR073" H 15000 3650 50  0001 C CNN
+F 1 "+5V" H 15015 3973 50  0000 C CNN
+F 2 "" H 15000 3800 50  0001 C CNN
+F 3 "" H 15000 3800 50  0001 C CNN
+	1    15000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0D22
+P 15000 6050
+AR Path="/6181BDB7/618E0D22" Ref="#PWR?"  Part="1" 
+AR Path="/618E0D22" Ref="#PWR074"  Part="1" 
+F 0 "#PWR074" H 15000 5800 50  0001 C CNN
+F 1 "GND" H 15005 5877 50  0000 C CNN
+F 2 "" H 15000 6050 50  0001 C CNN
+F 3 "" H 15000 6050 50  0001 C CNN
+	1    15000 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L part02-rescue:IRFML8244-Mouse Q?
+U 1 1 618E0D28
+P 14900 5600
+AR Path="/6181BDB7/618E0D28" Ref="Q?"  Part="1" 
+AR Path="/618E0D28" Ref="Q6"  Part="1" 
+F 0 "Q6" H 15105 5646 50  0000 L CNN
+F 1 "IRFML8244" H 15105 5555 50  0000 L CNN
+F 2 "Mouse_foot:IRFML8244" H 15100 5700 50  0001 C CNN
+F 3 "~" H 14900 5600 50  0001 C CNN
+	1    14900 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15000 5200 15000 5400
+$Comp
+L Device:R R?
+U 1 1 618E0D2F
+P 14550 5800
+AR Path="/6181BDB7/618E0D2F" Ref="R?"  Part="1" 
+AR Path="/618E0D2F" Ref="R23"  Part="1" 
+F 0 "R23" H 14620 5846 50  0000 L CNN
+F 1 "10k" H 14620 5755 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 14480 5800 50  0001 C CNN
+F 3 "~" H 14550 5800 50  0001 C CNN
+	1    14550 5800
+	1    0    0    -1  
+$EndComp
+Text GLabel 14450 5600 0    50   Input ~ 0
+PR-LED-SR-FL
+Wire Wire Line
+	14450 5600 14550 5600
+Wire Wire Line
+	15000 5800 15000 6000
+Wire Wire Line
+	14550 5950 14550 6000
+Wire Wire Line
+	14550 6000 15000 6000
+Connection ~ 15000 6000
+Wire Wire Line
+	15000 6000 15000 6050
+Wire Wire Line
+	14550 5650 14550 5600
+Connection ~ 14550 5600
+Wire Wire Line
+	14550 5600 14700 5600
+$Comp
+L power:+5V #PWR?
+U 1 1 618E0D3F
+P 13100 3800
+AR Path="/6181BDB7/618E0D3F" Ref="#PWR?"  Part="1" 
+AR Path="/618E0D3F" Ref="#PWR062"  Part="1" 
+F 0 "#PWR062" H 13100 3650 50  0001 C CNN
+F 1 "+5V" H 13115 3973 50  0000 C CNN
+F 2 "" H 13100 3800 50  0001 C CNN
+F 3 "" H 13100 3800 50  0001 C CNN
+	1    13100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0D45
+P 13100 6050
+AR Path="/6181BDB7/618E0D45" Ref="#PWR?"  Part="1" 
+AR Path="/618E0D45" Ref="#PWR063"  Part="1" 
+F 0 "#PWR063" H 13100 5800 50  0001 C CNN
+F 1 "GND" H 13105 5877 50  0000 C CNN
+F 2 "" H 13100 6050 50  0001 C CNN
+F 3 "" H 13100 6050 50  0001 C CNN
+	1    13100 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L part02-rescue:IRFML8244-Mouse Q?
+U 1 1 618E0D4B
+P 13000 5600
+AR Path="/6181BDB7/618E0D4B" Ref="Q?"  Part="1" 
+AR Path="/618E0D4B" Ref="Q3"  Part="1" 
+F 0 "Q3" H 13205 5646 50  0000 L CNN
+F 1 "IRFML8244" H 13205 5555 50  0000 L CNN
+F 2 "Mouse_foot:IRFML8244" H 13200 5700 50  0001 C CNN
+F 3 "~" H 13000 5600 50  0001 C CNN
+	1    13000 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 618E0D51
+P 12650 5800
+AR Path="/6181BDB7/618E0D51" Ref="R?"  Part="1" 
+AR Path="/618E0D51" Ref="R14"  Part="1" 
+F 0 "R14" H 12720 5846 50  0000 L CNN
+F 1 "10k" H 12720 5755 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 12580 5800 50  0001 C CNN
+F 3 "~" H 12650 5800 50  0001 C CNN
+	1    12650 5800
+	1    0    0    -1  
+$EndComp
+Text GLabel 12550 5600 0    50   Input ~ 0
+PR-LED-SL-FR
+Wire Wire Line
+	12550 5600 12650 5600
+Wire Wire Line
+	13100 5800 13100 6000
+Wire Wire Line
+	12650 5950 12650 6000
+Wire Wire Line
+	12650 6000 13100 6000
+Connection ~ 13100 6000
+Wire Wire Line
+	13100 6000 13100 6050
+Wire Wire Line
+	12650 5650 12650 5600
+Connection ~ 12650 5600
+Wire Wire Line
+	12650 5600 12800 5600
+Wire Wire Line
+	13100 5200 13100 5400
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 618E0D63
+P 1300 7750
+AR Path="/6181BDB7/618E0D63" Ref="#FLG?"  Part="1" 
+AR Path="/618E0D63" Ref="#FLG03"  Part="1" 
+F 0 "#FLG03" H 1300 7825 50  0001 C CNN
+F 1 "PWR_FLAG" H 1300 7923 50  0000 C CNN
+F 2 "" H 1300 7750 50  0001 C CNN
+F 3 "~" H 1300 7750 50  0001 C CNN
+	1    1300 7750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 7750 1500 7750
+Connection ~ 1500 7750
+Wire Wire Line
+	1500 7750 1500 7800
+$Comp
+L part02-rescue:Q_PMOS_DGS-Mouse Q?
+U 1 1 618E0D6C
+P 2200 1250
+AR Path="/6181BDB7/618E0D6C" Ref="Q?"  Part="1" 
+AR Path="/618E0D6C" Ref="Q1"  Part="1" 
+F 0 "Q1" V 2542 1250 50  0000 C CNN
+F 1 "SSM3J332R" V 2451 1250 50  0000 C CNN
+F 2 "Mouse_foot:SSM3J332R_LFT" H 2400 1150 50  0001 C CNN
+F 3 "~" H 2200 1250 50  0001 C CNN
+	1    2200 1250
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2200 1550
+Wire Wire Line
+	2200 1450 2200 1550
+Connection ~ 1750 1150
+Wire Wire Line
+	1750 1150 2000 1150
+Connection ~ 2650 1150
+Wire Wire Line
+	2400 1150 2650 1150
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 618E0D78
+P 6250 3400
+AR Path="/6181BDB7/618E0D78" Ref="J?"  Part="1" 
+AR Path="/618E0D78" Ref="J3"  Part="1" 
+F 0 "J3" V 6250 3700 50  0000 C CNN
+F 1 "Conn_01x03_Male" V 6150 3400 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 6250 3400 50  0001 C CNN
+F 3 "~" H 6250 3400 50  0001 C CNN
+	1    6250 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_Photo_NPN_CE Q?
+U 1 1 618E0D7E
+P 13300 7200
+AR Path="/6181BDB7/618E0D7E" Ref="Q?"  Part="1" 
+AR Path="/618E0D7E" Ref="Q4"  Part="1" 
+F 0 "Q4" H 13490 7246 50  0000 L CNN
+F 1 "LTR-4206-SR" H 13490 7155 50  0000 L CNN
+F 2 "Mouse_foot:LTR4206E" H 13500 7300 50  0001 C CNN
+F 3 "~" H 13300 7200 50  0001 C CNN
+	1    13300 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 618E0D84
+P 13400 6950
+AR Path="/6181BDB7/618E0D84" Ref="#PWR?"  Part="1" 
+AR Path="/618E0D84" Ref="#PWR065"  Part="1" 
+F 0 "#PWR065" H 13400 6800 50  0001 C CNN
+F 1 "+5V" H 13415 7123 50  0000 C CNN
+F 2 "" H 13400 6950 50  0001 C CNN
+F 3 "" H 13400 6950 50  0001 C CNN
+	1    13400 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13400 6950 13400 7000
+$Comp
+L Device:R R?
+U 1 1 618E0D8B
+P 13400 7750
+AR Path="/6181BDB7/618E0D8B" Ref="R?"  Part="1" 
+AR Path="/618E0D8B" Ref="R20"  Part="1" 
+F 0 "R20" H 13470 7796 50  0000 L CNN
+F 1 "698" H 13470 7705 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 13330 7750 50  0001 C CNN
+F 3 "~" H 13400 7750 50  0001 C CNN
+	1    13400 7750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13400 7400 13400 7500
+$Comp
+L power:GND #PWR?
+U 1 1 618E0D92
+P 13400 7950
+AR Path="/6181BDB7/618E0D92" Ref="#PWR?"  Part="1" 
+AR Path="/618E0D92" Ref="#PWR066"  Part="1" 
+F 0 "#PWR066" H 13400 7700 50  0001 C CNN
+F 1 "GND" H 13405 7777 50  0000 C CNN
+F 2 "" H 13400 7950 50  0001 C CNN
+F 3 "" H 13400 7950 50  0001 C CNN
+	1    13400 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13400 7900 13400 7950
+Text GLabel 13550 7500 2    50   Output ~ 0
+PR-RCV-SR
+Wire Wire Line
+	13550 7500 13400 7500
+Connection ~ 13400 7500
+Wire Wire Line
+	13400 7500 13400 7600
+$Comp
+L Device:Q_Photo_NPN_CE Q?
+U 1 1 618E0D9D
+P 14250 7200
+AR Path="/6181BDB7/618E0D9D" Ref="Q?"  Part="1" 
+AR Path="/618E0D9D" Ref="Q5"  Part="1" 
+F 0 "Q5" H 14440 7246 50  0000 L CNN
+F 1 "LTR-4206-FL" H 14440 7155 50  0000 L CNN
+F 2 "Mouse_foot:LTR4206E" H 14450 7300 50  0001 C CNN
+F 3 "~" H 14250 7200 50  0001 C CNN
+	1    14250 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 618E0DA3
+P 14350 6950
+AR Path="/6181BDB7/618E0DA3" Ref="#PWR?"  Part="1" 
+AR Path="/618E0DA3" Ref="#PWR069"  Part="1" 
+F 0 "#PWR069" H 14350 6800 50  0001 C CNN
+F 1 "+5V" H 14365 7123 50  0000 C CNN
+F 2 "" H 14350 6950 50  0001 C CNN
+F 3 "" H 14350 6950 50  0001 C CNN
+	1    14350 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14350 6950 14350 7000
+$Comp
+L Device:R R?
+U 1 1 618E0DAA
+P 14350 7750
+AR Path="/6181BDB7/618E0DAA" Ref="R?"  Part="1" 
+AR Path="/618E0DAA" Ref="R22"  Part="1" 
+F 0 "R22" H 14420 7796 50  0000 L CNN
+F 1 "698" H 14420 7705 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 14280 7750 50  0001 C CNN
+F 3 "~" H 14350 7750 50  0001 C CNN
+	1    14350 7750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	14350 7400 14350 7500
+$Comp
+L power:GND #PWR?
+U 1 1 618E0DB1
+P 14350 7950
+AR Path="/6181BDB7/618E0DB1" Ref="#PWR?"  Part="1" 
+AR Path="/618E0DB1" Ref="#PWR070"  Part="1" 
+F 0 "#PWR070" H 14350 7700 50  0001 C CNN
+F 1 "GND" H 14355 7777 50  0000 C CNN
+F 2 "" H 14350 7950 50  0001 C CNN
+F 3 "" H 14350 7950 50  0001 C CNN
+	1    14350 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14350 7900 14350 7950
+Text GLabel 14500 7500 2    50   Output ~ 0
+PR-RCV-FL
+Wire Wire Line
+	14500 7500 14350 7500
+Connection ~ 14350 7500
+Wire Wire Line
+	14350 7500 14350 7600
+$Comp
+L Device:Q_Photo_NPN_CE Q?
+U 1 1 618E0DBC
+P 15300 7200
+AR Path="/6181BDB7/618E0DBC" Ref="Q?"  Part="1" 
+AR Path="/618E0DBC" Ref="Q7"  Part="1" 
+F 0 "Q7" H 15490 7246 50  0000 L CNN
+F 1 "LTR-4206-FR" H 15490 7155 50  0000 L CNN
+F 2 "Mouse_foot:LTR4206E" H 15500 7300 50  0001 C CNN
+F 3 "~" H 15300 7200 50  0001 C CNN
+	1    15300 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 618E0DC2
+P 15400 6950
+AR Path="/6181BDB7/618E0DC2" Ref="#PWR?"  Part="1" 
+AR Path="/618E0DC2" Ref="#PWR078"  Part="1" 
+F 0 "#PWR078" H 15400 6800 50  0001 C CNN
+F 1 "+5V" H 15415 7123 50  0000 C CNN
+F 2 "" H 15400 6950 50  0001 C CNN
+F 3 "" H 15400 6950 50  0001 C CNN
+	1    15400 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15400 6950 15400 7000
+$Comp
+L Device:R R?
+U 1 1 618E0DC9
+P 15400 7750
+AR Path="/6181BDB7/618E0DC9" Ref="R?"  Part="1" 
+AR Path="/618E0DC9" Ref="R26"  Part="1" 
+F 0 "R26" H 15470 7796 50  0000 L CNN
+F 1 "698" H 15470 7705 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 15330 7750 50  0001 C CNN
+F 3 "~" H 15400 7750 50  0001 C CNN
+	1    15400 7750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	15400 7400 15400 7500
+$Comp
+L power:GND #PWR?
+U 1 1 618E0DD0
+P 15400 7950
+AR Path="/6181BDB7/618E0DD0" Ref="#PWR?"  Part="1" 
+AR Path="/618E0DD0" Ref="#PWR079"  Part="1" 
+F 0 "#PWR079" H 15400 7700 50  0001 C CNN
+F 1 "GND" H 15405 7777 50  0000 C CNN
+F 2 "" H 15400 7950 50  0001 C CNN
+F 3 "" H 15400 7950 50  0001 C CNN
+	1    15400 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15400 7900 15400 7950
+Text GLabel 15550 7500 2    50   Output ~ 0
+PR-RCV-FR
+Wire Wire Line
+	15550 7500 15400 7500
+Connection ~ 15400 7500
+Wire Wire Line
+	15400 7500 15400 7600
+$Comp
+L Device:Q_Photo_NPN_CE Q?
+U 1 1 618E0DDB
+P 12250 7200
+AR Path="/6181BDB7/618E0DDB" Ref="Q?"  Part="1" 
+AR Path="/618E0DDB" Ref="Q2"  Part="1" 
+F 0 "Q2" H 12441 7246 50  0000 L CNN
+F 1 "LTR-4206-SL" H 12441 7155 50  0000 L CNN
+F 2 "Mouse_foot:LTR4206E" H 12450 7300 50  0001 C CNN
+F 3 "~" H 12250 7200 50  0001 C CNN
+	1    12250 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 618E0DE1
+P 12350 6950
+AR Path="/6181BDB7/618E0DE1" Ref="#PWR?"  Part="1" 
+AR Path="/618E0DE1" Ref="#PWR058"  Part="1" 
+F 0 "#PWR058" H 12350 6800 50  0001 C CNN
+F 1 "+5V" H 12365 7123 50  0000 C CNN
+F 2 "" H 12350 6950 50  0001 C CNN
+F 3 "" H 12350 6950 50  0001 C CNN
+	1    12350 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12350 6950 12350 7000
+$Comp
+L Device:R R?
+U 1 1 618E0DE8
+P 12350 7750
+AR Path="/6181BDB7/618E0DE8" Ref="R?"  Part="1" 
+AR Path="/618E0DE8" Ref="R11"  Part="1" 
+F 0 "R11" H 12420 7796 50  0000 L CNN
+F 1 "698" H 12420 7705 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 12280 7750 50  0001 C CNN
+F 3 "~" H 12350 7750 50  0001 C CNN
+	1    12350 7750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12350 7400 12350 7500
+$Comp
+L power:GND #PWR?
+U 1 1 618E0DEF
+P 12350 7950
+AR Path="/6181BDB7/618E0DEF" Ref="#PWR?"  Part="1" 
+AR Path="/618E0DEF" Ref="#PWR059"  Part="1" 
+F 0 "#PWR059" H 12350 7700 50  0001 C CNN
+F 1 "GND" H 12355 7777 50  0000 C CNN
+F 2 "" H 12350 7950 50  0001 C CNN
+F 3 "" H 12350 7950 50  0001 C CNN
+	1    12350 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12350 7900 12350 7950
+Text GLabel 12500 7500 2    50   Output ~ 0
+PR-RCV-SL
+Wire Wire Line
+	12500 7500 12350 7500
+Connection ~ 12350 7500
+Wire Wire Line
+	12350 7500 12350 7600
+Text Notes 13400 6550 0    167  ~ 33
+IR_RCV
+$Comp
+L power:+3.3V #PWR?
+U 1 1 618E0DFB
+P 1500 7500
+AR Path="/6181BDB7/618E0DFB" Ref="#PWR?"  Part="1" 
+AR Path="/618E0DFB" Ref="#PWR03"  Part="1" 
+F 0 "#PWR03" H 1500 7350 50  0001 C CNN
+F 1 "+3.3V" H 1515 7673 50  0000 C CNN
+F 2 "" H 1500 7500 50  0001 C CNN
+F 3 "" H 1500 7500 50  0001 C CNN
+	1    1500 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L part02-rescue:IR_LED-Mouse SR_D?
+U 1 1 618E0E01
+P 15000 4100
+AR Path="/6181BDB7/618E0E01" Ref="SR_D?"  Part="1" 
+AR Path="/618E0E01" Ref="SR_D1"  Part="1" 
+F 0 "SR_D1" V 14996 4020 50  0000 R CNN
+F 1 "LTE-209" V 14905 4020 50  0000 R CNN
+F 2 "Mouse_foot:LTE209" H 15000 4275 50  0001 C CNN
+F 3 "http://www.osram-os.com/Graphics/XPic0/00203825_0.pdf" H 14950 4100 50  0001 C CNN
+	1    15000 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L part02-rescue:IR_LED-Mouse FR_D?
+U 1 1 618E0E07
+P 13100 4550
+AR Path="/6181BDB7/618E0E07" Ref="FR_D?"  Part="1" 
+AR Path="/618E0E07" Ref="FR_D1"  Part="1" 
+F 0 "FR_D1" V 13096 4470 50  0000 R CNN
+F 1 "LTE-209" V 13005 4470 50  0000 R CNN
+F 2 "Mouse_foot:LTE209" H 13100 4725 50  0001 C CNN
+F 3 "http://www.osram-os.com/Graphics/XPic0/00203825_0.pdf" H 13050 4550 50  0001 C CNN
+	1    13100 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L part02-rescue:IR_LED-Mouse SL_D?
+U 1 1 618E0E0D
+P 13100 4100
+AR Path="/6181BDB7/618E0E0D" Ref="SL_D?"  Part="1" 
+AR Path="/618E0E0D" Ref="SL_D1"  Part="1" 
+F 0 "SL_D1" V 13096 4020 50  0000 R CNN
+F 1 "LTE-209" V 13005 4020 50  0000 R CNN
+F 2 "Mouse_foot:LTE209" H 13100 4275 50  0001 C CNN
+F 3 "http://www.osram-os.com/Graphics/XPic0/00203825_0.pdf" H 13050 4100 50  0001 C CNN
+	1    13100 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L part02-rescue:IR_LED-Mouse FL_D?
+U 1 1 618E0E13
+P 15000 4550
+AR Path="/6181BDB7/618E0E13" Ref="FL_D?"  Part="1" 
+AR Path="/618E0E13" Ref="FL_D1"  Part="1" 
+F 0 "FL_D1" V 14996 4470 50  0000 R CNN
+F 1 "LTE-209" V 14905 4470 50  0000 R CNN
+F 2 "Mouse_foot:LTE209" H 15000 4725 50  0001 C CNN
+F 3 "http://www.osram-os.com/Graphics/XPic0/00203825_0.pdf" H 14950 4550 50  0001 C CNN
+	1    15000 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13100 3800 13100 4000
+Wire Wire Line
+	13100 4300 13100 4450
+Wire Wire Line
+	13100 4750 13100 4900
+Wire Wire Line
+	15000 3800 15000 4000
+Wire Wire Line
+	15000 4300 15000 4450
+Wire Wire Line
+	15000 4750 15000 4900
+$Comp
+L power:+3.3V #PWR?
+U 1 1 618E0E1F
+P 10600 5750
+AR Path="/6181BDB7/618E0E1F" Ref="#PWR?"  Part="1" 
+AR Path="/618E0E1F" Ref="#PWR047"  Part="1" 
+F 0 "#PWR047" H 10600 5600 50  0001 C CNN
+F 1 "+3.3V" H 10615 5923 50  0000 C CNN
+F 2 "" H 10600 5750 50  0001 C CNN
+F 3 "" H 10600 5750 50  0001 C CNN
+	1    10600 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618E0E25
+P 10200 5900
+AR Path="/6181BDB7/618E0E25" Ref="C?"  Part="1" 
+AR Path="/618E0E25" Ref="C21"  Part="1" 
+F 0 "C21" H 9950 5950 50  0000 L CNN
+F 1 "0.1μ" H 9950 5850 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 10200 5900 50  0001 C CNN
+F 3 "~" H 10200 5900 50  0001 C CNN
+	1    10200 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0E2B
+P 10200 6050
+AR Path="/6181BDB7/618E0E2B" Ref="#PWR?"  Part="1" 
+AR Path="/618E0E2B" Ref="#PWR040"  Part="1" 
+F 0 "#PWR040" H 10200 5800 50  0001 C CNN
+F 1 "GND" H 10205 5877 50  0000 C CNN
+F 2 "" H 10200 6050 50  0001 C CNN
+F 3 "" H 10200 6050 50  0001 C CNN
+	1    10200 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 5750 10600 5800
+Wire Wire Line
+	10600 5800 10200 5800
+Connection ~ 10600 5800
+Wire Wire Line
+	10600 5800 10600 5850
+Wire Wire Line
+	10200 6000 10200 6050
+$Comp
+L power:+BATT #PWR?
+U 1 1 618E0E36
+P 10850 5750
+AR Path="/6181BDB7/618E0E36" Ref="#PWR?"  Part="1" 
+AR Path="/618E0E36" Ref="#PWR051"  Part="1" 
+F 0 "#PWR051" H 10850 5600 50  0001 C CNN
+F 1 "+BATT" H 10865 5923 50  0000 C CNN
+F 2 "" H 10850 5750 50  0001 C CNN
+F 3 "" H 10850 5750 50  0001 C CNN
+	1    10850 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 5750 10850 5800
+$Comp
+L Device:C_Small C?
+U 1 1 618E0E3D
+P 11200 5900
+AR Path="/6181BDB7/618E0E3D" Ref="C?"  Part="1" 
+AR Path="/618E0E3D" Ref="C23"  Part="1" 
+F 0 "C23" H 10950 5950 50  0000 L CNN
+F 1 "0.1μ" H 10950 5850 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 11200 5900 50  0001 C CNN
+F 3 "~" H 11200 5900 50  0001 C CNN
+	1    11200 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618E0E43
+P 11400 5900
+AR Path="/6181BDB7/618E0E43" Ref="C?"  Part="1" 
+AR Path="/618E0E43" Ref="C25"  Part="1" 
+F 0 "C25" H 11150 5950 50  0000 L CNN
+F 1 "10μ" H 11150 5850 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 11400 5900 50  0001 C CNN
+F 3 "~" H 11400 5900 50  0001 C CNN
+	1    11400 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0E49
+P 11300 6050
+AR Path="/6181BDB7/618E0E49" Ref="#PWR?"  Part="1" 
+AR Path="/618E0E49" Ref="#PWR054"  Part="1" 
+F 0 "#PWR054" H 11300 5800 50  0001 C CNN
+F 1 "GND" H 11305 5877 50  0000 C CNN
+F 2 "" H 11300 6050 50  0001 C CNN
+F 3 "" H 11300 6050 50  0001 C CNN
+	1    11300 6050
+	1    0    0    -1  
+$EndComp
+Connection ~ 10850 5800
+Wire Wire Line
+	10850 5800 10850 5850
+Wire Wire Line
+	11400 6000 11400 6050
+Wire Wire Line
+	11200 6000 11200 6050
+$Comp
+L power:GND #PWR?
+U 1 1 618E0E59
+P 10850 7150
+AR Path="/6181BDB7/618E0E59" Ref="#PWR?"  Part="1" 
+AR Path="/618E0E59" Ref="#PWR052"  Part="1" 
+F 0 "#PWR052" H 10850 6900 50  0001 C CNN
+F 1 "GND" H 10855 6977 50  0000 C CNN
+F 2 "" H 10850 7150 50  0001 C CNN
+F 3 "" H 10850 7150 50  0001 C CNN
+	1    10850 7150
+	1    0    0    -1  
+$EndComp
+Text GLabel 10050 6450 0    50   Input ~ 0
+MT-B-IN
+Text GLabel 10050 6600 0    50   Input ~ 0
+MT-B-ENBL
+Text GLabel 11450 6500 2    50   Output ~ 0
+BOUT1_MT
+Text GLabel 11450 6350 2    50   Output ~ 0
+BOUT2_MT
+$Comp
+L part02-rescue:DRV8838DSGT-Mouse IC?
+U 1 1 618E0E6B
+P 10100 6150
+AR Path="/6181BDB7/618E0E6B" Ref="IC?"  Part="1" 
+AR Path="/618E0E6B" Ref="IC2"  Part="1" 
+F 0 "IC2" H 10350 5350 50  0000 L CNN
+F 1 "DRV8838DSGT" H 10150 5200 50  0000 L CNN
+F 2 "Mouse_foot:SON50P200X200X80-9N" H 11150 6250 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/drv8838.pdf" H 11150 6150 50  0001 L CNN
+F 4 "Low-Voltage Half-Bridge Driver 1.8A WSON Texas Instruments DRV8838DSGT, MOSFET Power Driver 1.8A H Bridge, 1.8  7 V, 8-Pin WSON" H 11150 6050 50  0001 L CNN "Description"
+F 5 "0.8" H 11150 5950 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 11150 5850 50  0001 L CNN "Manufacturer_Name"
+F 7 "DRV8838DSGT" H 11150 5750 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-DRV8838DSGT" H 11150 5650 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/DRV8838DSGT?qs=6E8igxPflKfWHg0mERhVqA%3D%3D" H 11150 5550 50  0001 L CNN "Mouser Price/Stock"
+F 10 "DRV8838DSGT" H 11150 5450 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/drv8838dsgt/texas-instruments" H 11150 5350 50  0001 L CNN "Arrow Price/Stock"
+	1    10100 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 6950 10850 7150
+Wire Wire Line
+	10050 6600 10100 6600
+NoConn ~ 10100 6300
+NoConn ~ 10600 6950
+Wire Wire Line
+	10050 6450 10100 6450
+$Comp
+L power:+3.3V #PWR?
+U 1 1 618E0E78
+P 10600 3750
+AR Path="/6181BDB7/618E0E78" Ref="#PWR?"  Part="1" 
+AR Path="/618E0E78" Ref="#PWR046"  Part="1" 
+F 0 "#PWR046" H 10600 3600 50  0001 C CNN
+F 1 "+3.3V" H 10615 3923 50  0000 C CNN
+F 2 "" H 10600 3750 50  0001 C CNN
+F 3 "" H 10600 3750 50  0001 C CNN
+	1    10600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618E0E7E
+P 10200 3900
+AR Path="/6181BDB7/618E0E7E" Ref="C?"  Part="1" 
+AR Path="/618E0E7E" Ref="C20"  Part="1" 
+F 0 "C20" H 9950 3950 50  0000 L CNN
+F 1 "0.1μ" H 9950 3850 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 10200 3900 50  0001 C CNN
+F 3 "~" H 10200 3900 50  0001 C CNN
+	1    10200 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0E84
+P 10200 4050
+AR Path="/6181BDB7/618E0E84" Ref="#PWR?"  Part="1" 
+AR Path="/618E0E84" Ref="#PWR039"  Part="1" 
+F 0 "#PWR039" H 10200 3800 50  0001 C CNN
+F 1 "GND" H 10205 3877 50  0000 C CNN
+F 2 "" H 10200 4050 50  0001 C CNN
+F 3 "" H 10200 4050 50  0001 C CNN
+	1    10200 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 3750 10600 3800
+Wire Wire Line
+	10600 3800 10200 3800
+Connection ~ 10600 3800
+Wire Wire Line
+	10600 3800 10600 3850
+Wire Wire Line
+	10200 4000 10200 4050
+$Comp
+L power:+BATT #PWR?
+U 1 1 618E0E8F
+P 10850 3750
+AR Path="/6181BDB7/618E0E8F" Ref="#PWR?"  Part="1" 
+AR Path="/618E0E8F" Ref="#PWR049"  Part="1" 
+F 0 "#PWR049" H 10850 3600 50  0001 C CNN
+F 1 "+BATT" H 10865 3923 50  0000 C CNN
+F 2 "" H 10850 3750 50  0001 C CNN
+F 3 "" H 10850 3750 50  0001 C CNN
+	1    10850 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 3750 10850 3800
+$Comp
+L Device:C_Small C?
+U 1 1 618E0E96
+P 11200 3900
+AR Path="/6181BDB7/618E0E96" Ref="C?"  Part="1" 
+AR Path="/618E0E96" Ref="C22"  Part="1" 
+F 0 "C22" H 10950 3950 50  0000 L CNN
+F 1 "0.1μ" H 10950 3850 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 11200 3900 50  0001 C CNN
+F 3 "~" H 11200 3900 50  0001 C CNN
+	1    11200 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618E0E9C
+P 11400 3900
+AR Path="/6181BDB7/618E0E9C" Ref="C?"  Part="1" 
+AR Path="/618E0E9C" Ref="C24"  Part="1" 
+F 0 "C24" H 11150 3950 50  0000 L CNN
+F 1 "10μ" H 11150 3850 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 11400 3900 50  0001 C CNN
+F 3 "~" H 11400 3900 50  0001 C CNN
+	1    11400 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0EA2
+P 11300 4050
+AR Path="/6181BDB7/618E0EA2" Ref="#PWR?"  Part="1" 
+AR Path="/618E0EA2" Ref="#PWR053"  Part="1" 
+F 0 "#PWR053" H 11300 3800 50  0001 C CNN
+F 1 "GND" H 11305 3877 50  0000 C CNN
+F 2 "" H 11300 4050 50  0001 C CNN
+F 3 "" H 11300 4050 50  0001 C CNN
+	1    11300 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 10850 3800
+Wire Wire Line
+	10850 3800 10850 3850
+Wire Wire Line
+	11400 4000 11400 4050
+Wire Wire Line
+	11200 4000 11200 4050
+$Comp
+L power:GND #PWR?
+U 1 1 618E0EB2
+P 10850 5150
+AR Path="/6181BDB7/618E0EB2" Ref="#PWR?"  Part="1" 
+AR Path="/618E0EB2" Ref="#PWR050"  Part="1" 
+F 0 "#PWR050" H 10850 4900 50  0001 C CNN
+F 1 "GND" H 10855 4977 50  0000 C CNN
+F 2 "" H 10850 5150 50  0001 C CNN
+F 3 "" H 10850 5150 50  0001 C CNN
+	1    10850 5150
+	1    0    0    -1  
+$EndComp
+Text GLabel 10050 4450 0    50   Input ~ 0
+MT-A-IN
+Text GLabel 10050 4600 0    50   Input ~ 0
+MT-A-ENBL
+Text GLabel 11450 4500 2    50   Output ~ 0
+AOUT1_MT
+Text GLabel 11450 4350 2    50   Output ~ 0
+AOUT2_MT
+$Comp
+L part02-rescue:DRV8838DSGT-Mouse IC?
+U 1 1 618E0EC4
+P 10100 4150
+AR Path="/6181BDB7/618E0EC4" Ref="IC?"  Part="1" 
+AR Path="/618E0EC4" Ref="IC1"  Part="1" 
+F 0 "IC1" H 10000 3450 50  0000 L CNN
+F 1 "DRV8838DSGT" H 9850 3300 50  0000 L CNN
+F 2 "Mouse_foot:SON50P200X200X80-9N" H 11150 4250 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/drv8838.pdf" H 11150 4150 50  0001 L CNN
+F 4 "Low-Voltage Half-Bridge Driver 1.8A WSON Texas Instruments DRV8838DSGT, MOSFET Power Driver 1.8A H Bridge, 1.8  7 V, 8-Pin WSON" H 11150 4050 50  0001 L CNN "Description"
+F 5 "0.8" H 11150 3950 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 11150 3850 50  0001 L CNN "Manufacturer_Name"
+F 7 "DRV8838DSGT" H 11150 3750 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-DRV8838DSGT" H 11150 3650 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/DRV8838DSGT?qs=6E8igxPflKfWHg0mERhVqA%3D%3D" H 11150 3550 50  0001 L CNN "Mouser Price/Stock"
+F 10 "DRV8838DSGT" H 11150 3450 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/drv8838dsgt/texas-instruments" H 11150 3350 50  0001 L CNN "Arrow Price/Stock"
+	1    10100 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 4950 10850 5150
+Wire Wire Line
+	10050 4600 10100 4600
+NoConn ~ 10100 4300
+NoConn ~ 10600 4950
+Wire Wire Line
+	10050 4450 10100 4450
+$Comp
+L power:+5V #PWR?
+U 1 1 618E0ED1
+P 10300 1200
+AR Path="/6181BDB7/618E0ED1" Ref="#PWR?"  Part="1" 
+AR Path="/618E0ED1" Ref="#PWR041"  Part="1" 
+F 0 "#PWR041" H 10300 1050 50  0001 C CNN
+F 1 "+5V" H 10315 1373 50  0000 C CNN
+F 2 "" H 10300 1200 50  0001 C CNN
+F 3 "" H 10300 1200 50  0001 C CNN
+	1    10300 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 618E0ED7
+P 10150 1000
+AR Path="/6181BDB7/618E0ED7" Ref="#FLG?"  Part="1" 
+AR Path="/618E0ED7" Ref="#FLG05"  Part="1" 
+F 0 "#FLG05" H 10150 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 10150 1173 50  0000 C CNN
+F 2 "" H 10150 1000 50  0001 C CNN
+F 3 "~" H 10150 1000 50  0001 C CNN
+	1    10150 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 618E0EDD
+P 12000 1250
+AR Path="/6181BDB7/618E0EDD" Ref="#PWR?"  Part="1" 
+AR Path="/618E0EDD" Ref="#PWR057"  Part="1" 
+F 0 "#PWR057" H 12000 1100 50  0001 C CNN
+F 1 "+3.3V" H 12015 1423 50  0000 C CNN
+F 2 "" H 12000 1250 50  0001 C CNN
+F 3 "" H 12000 1250 50  0001 C CNN
+	1    12000 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1250 1550 1600
+$Comp
+L Device:C_Small C?
+U 1 1 618E0EE4
+P 11500 1800
+AR Path="/6181BDB7/618E0EE4" Ref="C?"  Part="1" 
+AR Path="/618E0EE4" Ref="C26"  Part="1" 
+F 0 "C26" H 11592 1846 50  0000 L CNN
+F 1 "0.01μ" H 11592 1755 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 11500 1800 50  0001 C CNN
+F 3 "~" H 11500 1800 50  0001 C CNN
+	1    11500 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618E0EEA
+P 10050 1300
+AR Path="/6181BDB7/618E0EEA" Ref="C?"  Part="1" 
+AR Path="/618E0EEA" Ref="C19"  Part="1" 
+F 0 "C19" V 9800 1200 50  0000 L CNN
+F 1 "1μ" V 9900 1200 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 10050 1300 50  0001 C CNN
+F 3 "~" H 10050 1300 50  0001 C CNN
+	1    10050 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10300 1200 10300 1250
+Wire Wire Line
+	10300 1300 10150 1300
+Connection ~ 10300 1300
+$Comp
+L power:GND #PWR?
+U 1 1 618E0EF3
+P 9850 1350
+AR Path="/6181BDB7/618E0EF3" Ref="#PWR?"  Part="1" 
+AR Path="/618E0EF3" Ref="#PWR038"  Part="1" 
+F 0 "#PWR038" H 9850 1100 50  0001 C CNN
+F 1 "GND" H 9855 1177 50  0000 C CNN
+F 2 "" H 9850 1350 50  0001 C CNN
+F 3 "" H 9850 1350 50  0001 C CNN
+	1    9850 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 1300 9850 1300
+Wire Wire Line
+	9850 1300 9850 1350
+$Comp
+L power:GND #PWR?
+U 1 1 618E0EFB
+P 11900 1600
+AR Path="/6181BDB7/618E0EFB" Ref="#PWR?"  Part="1" 
+AR Path="/618E0EFB" Ref="#PWR056"  Part="1" 
+F 0 "#PWR056" H 11900 1350 50  0001 C CNN
+F 1 "GND" H 11905 1427 50  0000 C CNN
+F 2 "" H 11900 1600 50  0001 C CNN
+F 3 "" H 11900 1600 50  0001 C CNN
+	1    11900 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11500 1650 11500 1700
+$Comp
+L power:GND #PWR?
+U 1 1 618E0F02
+P 11500 2000
+AR Path="/6181BDB7/618E0F02" Ref="#PWR?"  Part="1" 
+AR Path="/618E0F02" Ref="#PWR055"  Part="1" 
+F 0 "#PWR055" H 11500 1750 50  0001 C CNN
+F 1 "GND" H 11505 1827 50  0000 C CNN
+F 2 "" H 11500 2000 50  0001 C CNN
+F 3 "" H 11500 2000 50  0001 C CNN
+	1    11500 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11500 1900 11500 2000
+Text GLabel 9850 1650 0    50   Input ~ 0
+EN_Reg
+Text GLabel 9050 1250 2    50   Output ~ 0
+EN_Reg
+Wire Wire Line
+	8900 1250 9050 1250
+Connection ~ 8900 1250
+Wire Wire Line
+	8900 1250 8900 1350
+Wire Wire Line
+	10150 1000 10150 1250
+Wire Wire Line
+	10150 1250 10300 1250
+Connection ~ 10300 1250
+Wire Wire Line
+	10300 1250 10300 1300
+Wire Wire Line
+	11400 1650 11500 1650
+Wire Wire Line
+	10300 1300 10300 1400
+$Comp
+L part02-rescue:TPS71733DCKR-Mouse U?
+U 1 1 618E0F15
+P 9600 1300
+AR Path="/6181BDB7/618E0F15" Ref="U?"  Part="1" 
+AR Path="/618E0F15" Ref="U4"  Part="1" 
+F 0 "U4" H 10850 1587 60  0000 C CNN
+F 1 "TPS71733DCKR" H 10850 1481 60  0000 C CNN
+F 2 "Mouse_foot:TPS71733DCKR" H 10800 1540 60  0001 C CNN
+F 3 "" H 10300 1050 60  0000 C CNN
+	1    9600 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618E0F1B
+P 11900 1500
+AR Path="/6181BDB7/618E0F1B" Ref="C?"  Part="1" 
+AR Path="/618E0F1B" Ref="C27"  Part="1" 
+F 0 "C27" H 12050 1550 50  0000 L CNN
+F 1 "1μ" H 12050 1450 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 11900 1500 50  0001 C CNN
+F 3 "~" H 11900 1500 50  0001 C CNN
+	1    11900 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12000 1400 12000 1250
+$Comp
+L power:GND #PWR?
+U 1 1 618E0F24
+P 10850 2250
+AR Path="/6181BDB7/618E0F24" Ref="#PWR?"  Part="1" 
+AR Path="/618E0F24" Ref="#PWR048"  Part="1" 
+F 0 "#PWR048" H 10850 2000 50  0001 C CNN
+F 1 "GND" H 10855 2077 50  0000 C CNN
+F 2 "" H 10850 2250 50  0001 C CNN
+F 3 "" H 10850 2250 50  0001 C CNN
+	1    10850 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 1650 9900 1650
+$Comp
+L Device:R R?
+U 1 1 618E0F2B
+P 10050 1650
+AR Path="/6181BDB7/618E0F2B" Ref="R?"  Part="1" 
+AR Path="/618E0F2B" Ref="R10"  Part="1" 
+F 0 "R10" V 9843 1650 50  0000 C CNN
+F 1 "10k" V 9934 1650 50  0000 C CNN
+F 2 "Mouse_foot:RESC1608X55N" V 9980 1650 50  0001 C CNN
+F 3 "~" H 10050 1650 50  0001 C CNN
+	1    10050 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10200 1650 10300 1650
+$Comp
+L part02-rescue:STM32F405RGT6-Mouse U?
+U 1 1 618E0F35
+P 5000 7300
+AR Path="/6181BDB7/618E0F35" Ref="U?"  Part="1" 
+AR Path="/618E0F35" Ref="U2"  Part="1" 
+F 0 "U2" H 5250 8350 50  0000 C CNN
+F 1 "STM32F405RGT6" H 5250 8050 50  0000 C CNN
+F 2 "Mouse_foot:QFP50P1200X1200X160-64N" H 5000 7300 50  0001 L BNN
+F 3 "https://www.alldatasheet.com/datasheet-pdf/pdf/510007/STMICROELECTRONICS/STM32F405RGT6.html" H 5000 7300 50  0001 L BNN
+F 4 "LTR" H 5000 7300 50  0001 L BNN "PARTREV"
+F 5 "STMicroelectronics" H 5000 7300 50  0001 L BNN "MANUFACTURER"
+F 6 "IPC-7351B" H 5000 7300 50  0001 L BNN "STANDARD"
+	1    5000 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 6950 2000 6950
+Wire Wire Line
+	2600 6600 3300 6600
+NoConn ~ 3300 6800
+$Comp
+L power:+3.3V #PWR?
+U 1 1 618E0F3E
+P 2850 5500
+AR Path="/6181BDB7/618E0F3E" Ref="#PWR?"  Part="1" 
+AR Path="/618E0F3E" Ref="#PWR012"  Part="1" 
+F 0 "#PWR012" H 2850 5350 50  0001 C CNN
+F 1 "+3.3V" H 2865 5673 50  0000 C CNN
+F 2 "" H 2850 5500 50  0001 C CNN
+F 3 "" H 2850 5500 50  0001 C CNN
+	1    2850 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618E0F44
+P 3600 4950
+AR Path="/6181BDB7/618E0F44" Ref="C?"  Part="1" 
+AR Path="/618E0F44" Ref="C5"  Part="1" 
+F 0 "C5" V 3350 4950 50  0000 L CNN
+F 1 "0.1μ" V 3450 4900 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 3600 4950 50  0001 C CNN
+F 3 "~" H 3600 4950 50  0001 C CNN
+	1    3600 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618E0F4A
+P 7500 5700
+AR Path="/6181BDB7/618E0F4A" Ref="C?"  Part="1" 
+AR Path="/618E0F4A" Ref="C15"  Part="1" 
+F 0 "C15" H 7250 5750 50  0000 L CNN
+F 1 "0.1μ" H 7250 5650 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 7500 5700 50  0001 C CNN
+F 3 "~" H 7500 5700 50  0001 C CNN
+	1    7500 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618E0F50
+P 7100 9500
+AR Path="/6181BDB7/618E0F50" Ref="C?"  Part="1" 
+AR Path="/618E0F50" Ref="C14"  Part="1" 
+F 0 "C14" H 6850 9550 50  0000 L CNN
+F 1 "0.1μ" H 6850 9450 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 7100 9500 50  0001 C CNN
+F 3 "~" H 7100 9500 50  0001 C CNN
+	1    7100 9500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618E0F56
+P 4250 9700
+AR Path="/6181BDB7/618E0F56" Ref="C?"  Part="1" 
+AR Path="/618E0F56" Ref="C6"  Part="1" 
+F 0 "C6" H 4050 9750 50  0000 L CNN
+F 1 "0.1μ" H 4050 9650 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 4250 9700 50  0001 C CNN
+F 3 "~" H 4250 9700 50  0001 C CNN
+	1    4250 9700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618E0F5C
+P 2350 8400
+AR Path="/6181BDB7/618E0F5C" Ref="C?"  Part="1" 
+AR Path="/618E0F5C" Ref="C3"  Part="1" 
+F 0 "C3" H 2100 8450 50  0000 L CNN
+F 1 "0.1μ" H 2100 8350 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 2350 8400 50  0001 C CNN
+F 3 "~" H 2350 8400 50  0001 C CNN
+	1    2350 8400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 8200 1950 8200
+Wire Wire Line
+	1500 8100 1500 8200
+$Comp
+L Device:C_Small C?
+U 1 1 618E0F64
+P 1950 8400
+AR Path="/6181BDB7/618E0F64" Ref="C?"  Part="1" 
+AR Path="/618E0F64" Ref="C1"  Part="1" 
+F 0 "C1" H 1700 8450 50  0000 L CNN
+F 1 "1μ" H 1700 8350 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 1950 8400 50  0001 C CNN
+F 3 "~" H 1950 8400 50  0001 C CNN
+	1    1950 8400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 8200 1950 8300
+Connection ~ 1950 8200
+Wire Wire Line
+	1950 8200 2350 8200
+Wire Wire Line
+	2350 8200 2350 8300
+Connection ~ 2350 8200
+Wire Wire Line
+	2350 8200 3300 8200
+$Comp
+L power:GND #PWR?
+U 1 1 618E0F70
+P 2150 8700
+AR Path="/6181BDB7/618E0F70" Ref="#PWR?"  Part="1" 
+AR Path="/618E0F70" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 2150 8450 50  0001 C CNN
+F 1 "GND" H 2155 8527 50  0000 C CNN
+F 2 "" H 2150 8700 50  0001 C CNN
+F 3 "" H 2150 8700 50  0001 C CNN
+	1    2150 8700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 8500 1950 8700
+Wire Wire Line
+	2350 8500 2350 8700
+$Comp
+L Device:C_Small C?
+U 1 1 618E0F7B
+P 2450 7550
+AR Path="/6181BDB7/618E0F7B" Ref="C?"  Part="1" 
+AR Path="/618E0F7B" Ref="C4"  Part="1" 
+F 0 "C4" H 2200 7600 50  0000 L CNN
+F 1 "0.1μ" H 2200 7500 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 2450 7550 50  0001 C CNN
+F 3 "~" H 2450 7550 50  0001 C CNN
+	1    2450 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 7000 2450 7350
+Wire Wire Line
+	2850 5500 2850 5800
+Wire Wire Line
+	2850 5800 3300 5800
+Wire Wire Line
+	3300 8000 3100 8000
+Wire Wire Line
+	7300 9500 7200 9500
+$Comp
+L power:GND #PWR?
+U 1 1 618E0F86
+P 7300 9600
+AR Path="/6181BDB7/618E0F86" Ref="#PWR?"  Part="1" 
+AR Path="/618E0F86" Ref="#PWR032"  Part="1" 
+F 0 "#PWR032" H 7300 9350 50  0001 C CNN
+F 1 "GND" H 7305 9427 50  0000 C CNN
+F 2 "" H 7300 9600 50  0001 C CNN
+F 3 "" H 7300 9600 50  0001 C CNN
+	1    7300 9600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 9500 6850 9500
+Wire Wire Line
+	4250 9350 4250 9600
+$Comp
+L power:GND #PWR?
+U 1 1 618E0F8E
+P 4250 10050
+AR Path="/6181BDB7/618E0F8E" Ref="#PWR?"  Part="1" 
+AR Path="/618E0F8E" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 4250 9800 50  0001 C CNN
+F 1 "GND" H 4255 9877 50  0000 C CNN
+F 2 "" H 4250 10050 50  0001 C CNN
+F 3 "" H 4250 10050 50  0001 C CNN
+	1    4250 10050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 9800 4250 10050
+$Comp
+L power:GND #PWR?
+U 1 1 618E0F96
+P 7800 5350
+AR Path="/6181BDB7/618E0F96" Ref="#PWR?"  Part="1" 
+AR Path="/618E0F96" Ref="#PWR034"  Part="1" 
+F 0 "#PWR034" H 7800 5100 50  0001 C CNN
+F 1 "GND" H 7805 5177 50  0000 C CNN
+F 2 "" H 7800 5350 50  0001 C CNN
+F 3 "" H 7800 5350 50  0001 C CNN
+	1    7800 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 5600 7500 5350
+Wire Wire Line
+	7500 5350 7800 5350
+$Comp
+L power:GND #PWR?
+U 1 1 618E0F9E
+P 3450 5100
+AR Path="/6181BDB7/618E0F9E" Ref="#PWR?"  Part="1" 
+AR Path="/618E0F9E" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 3450 4850 50  0001 C CNN
+F 1 "GND" H 3455 4927 50  0000 C CNN
+F 2 "" H 3450 5100 50  0001 C CNN
+F 3 "" H 3450 5100 50  0001 C CNN
+	1    3450 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4950 3850 4950
+Wire Wire Line
+	3450 4950 3450 5100
+Wire Wire Line
+	6850 9350 6850 9500
+Wire Wire Line
+	7300 9500 7300 9600
+$Comp
+L power:+3.3V #PWR?
+U 1 1 618E0FA8
+P 8050 5650
+AR Path="/6181BDB7/618E0FA8" Ref="#PWR?"  Part="1" 
+AR Path="/618E0FA8" Ref="#PWR036"  Part="1" 
+F 0 "#PWR036" H 8050 5500 50  0001 C CNN
+F 1 "+3.3V" H 8065 5823 50  0000 C CNN
+F 2 "" H 8050 5650 50  0001 C CNN
+F 3 "" H 8050 5650 50  0001 C CNN
+	1    8050 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 618E0FAE
+P 7500 9550
+AR Path="/6181BDB7/618E0FAE" Ref="#PWR?"  Part="1" 
+AR Path="/618E0FAE" Ref="#PWR033"  Part="1" 
+F 0 "#PWR033" H 7500 9400 50  0001 C CNN
+F 1 "+3.3V" H 7515 9723 50  0000 C CNN
+F 2 "" H 7500 9550 50  0001 C CNN
+F 3 "" H 7500 9550 50  0001 C CNN
+	1    7500 9550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 9550 7500 9850
+Wire Wire Line
+	7500 9850 6850 9850
+Wire Wire Line
+	6850 9850 6850 9500
+Connection ~ 6850 9500
+Wire Wire Line
+	8050 5650 8050 5800
+$Comp
+L power:GND #PWR?
+U 1 1 618E0FBB
+P 4000 9900
+AR Path="/6181BDB7/618E0FBB" Ref="#PWR?"  Part="1" 
+AR Path="/618E0FBB" Ref="#PWR019"  Part="1" 
+F 0 "#PWR019" H 4000 9650 50  0001 C CNN
+F 1 "GND" H 4005 9727 50  0000 C CNN
+F 2 "" H 4000 9900 50  0001 C CNN
+F 3 "" H 4000 9900 50  0001 C CNN
+	1    4000 9900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 9350 4050 9600
+Wire Wire Line
+	4050 9600 4000 9600
+Wire Wire Line
+	4000 9600 4000 9900
+NoConn ~ 3300 6000
+NoConn ~ 3300 6400
+$Comp
+L Device:C_Small C?
+U 1 1 618E0FC7
+P 7600 6000
+AR Path="/6181BDB7/618E0FC7" Ref="C?"  Part="1" 
+AR Path="/618E0FC7" Ref="C16"  Part="1" 
+F 0 "C16" V 7500 6100 50  0000 L CNN
+F 1 "2.2μ" V 7650 6100 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 7600 6000 50  0001 C CNN
+F 3 "~" H 7600 6000 50  0001 C CNN
+	1    7600 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618E0FCD
+P 6650 9650
+AR Path="/6181BDB7/618E0FCD" Ref="C?"  Part="1" 
+AR Path="/618E0FCD" Ref="C12"  Part="1" 
+F 0 "C12" H 6500 9550 50  0000 L CNN
+F 1 "2.2μ" H 6450 9750 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 6650 9650 50  0001 C CNN
+F 3 "~" H 6650 9650 50  0001 C CNN
+	1    6650 9650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 8700 2350 8700
+Wire Wire Line
+	3100 8000 3100 8700
+Connection ~ 2350 8700
+$Comp
+L power:+3.3V #PWR?
+U 1 1 618E0FD6
+P 3850 4750
+AR Path="/6181BDB7/618E0FD6" Ref="#PWR?"  Part="1" 
+AR Path="/618E0FD6" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 3850 4600 50  0001 C CNN
+F 1 "+3.3V" H 3865 4923 50  0000 C CNN
+F 2 "" H 3850 4750 50  0001 C CNN
+F 3 "" H 3850 4750 50  0001 C CNN
+	1    3850 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4950 3500 4950
+Wire Wire Line
+	3850 4750 3850 4950
+Connection ~ 3850 4950
+Wire Wire Line
+	3850 4950 3850 5250
+Wire Wire Line
+	6050 9750 6050 9850
+Text GLabel 5050 5150 1    50   Output ~ 0
+USART-TX
+Text GLabel 4850 5150 1    50   Input ~ 0
+USART-RX
+$Comp
+L power:GND #PWR?
+U 1 1 618E0FE3
+P 3950 5100
+AR Path="/6181BDB7/618E0FE3" Ref="#PWR?"  Part="1" 
+AR Path="/618E0FE3" Ref="#PWR018"  Part="1" 
+F 0 "#PWR018" H 3950 4850 50  0001 C CNN
+F 1 "GND" H 3955 4927 50  0000 C CNN
+F 2 "" H 3950 5100 50  0001 C CNN
+F 3 "" H 3950 5100 50  0001 C CNN
+	1    3950 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 5050 4050 5050
+Wire Wire Line
+	4050 5050 4050 5250
+Wire Wire Line
+	3950 5050 3950 5100
+Wire Wire Line
+	7400 6000 7500 6000
+$Comp
+L power:GND #PWR?
+U 1 1 618E0FED
+P 7950 6050
+AR Path="/6181BDB7/618E0FED" Ref="#PWR?"  Part="1" 
+AR Path="/618E0FED" Ref="#PWR035"  Part="1" 
+F 0 "#PWR035" H 7950 5800 50  0001 C CNN
+F 1 "GND" H 7955 5877 50  0000 C CNN
+F 2 "" H 7950 6050 50  0001 C CNN
+F 3 "" H 7950 6050 50  0001 C CNN
+	1    7950 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 6000 7950 6000
+Wire Wire Line
+	7950 6000 7950 6050
+Wire Wire Line
+	6650 9550 6650 9350
+$Comp
+L power:GND #PWR?
+U 1 1 618E0FF6
+P 6650 9850
+AR Path="/6181BDB7/618E0FF6" Ref="#PWR?"  Part="1" 
+AR Path="/618E0FF6" Ref="#PWR031"  Part="1" 
+F 0 "#PWR031" H 6650 9600 50  0001 C CNN
+F 1 "GND" H 6655 9677 50  0000 C CNN
+F 2 "" H 6650 9850 50  0001 C CNN
+F 3 "" H 6650 9850 50  0001 C CNN
+	1    6650 9850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 9750 6650 9850
+Wire Wire Line
+	4350 3950 4350 4050
+Wire Wire Line
+	4650 5100 4650 5250
+$Comp
+L Device:C_Small C?
+U 1 1 618E0FFF
+P 8100 1450
+AR Path="/6181BDB7/618E0FFF" Ref="C?"  Part="1" 
+AR Path="/618E0FFF" Ref="C17"  Part="1" 
+F 0 "C17" H 8250 1500 50  0000 L CNN
+F 1 "22μ" H 8250 1400 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 8100 1450 50  0001 C CNN
+F 3 "~" H 8100 1450 50  0001 C CNN
+	1    8100 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618E1005
+P 8550 1450
+AR Path="/6181BDB7/618E1005" Ref="C?"  Part="1" 
+AR Path="/618E1005" Ref="C18"  Part="1" 
+F 0 "C18" H 8700 1500 50  0000 L CNN
+F 1 "22μ" H 8700 1400 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 8550 1450 50  0001 C CNN
+F 3 "~" H 8550 1450 50  0001 C CNN
+	1    8550 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618E100B
+P 7100 1650
+AR Path="/6181BDB7/618E100B" Ref="C?"  Part="1" 
+AR Path="/618E100B" Ref="C13"  Part="1" 
+F 0 "C13" H 7250 1700 50  0000 L CNN
+F 1 "0.1μ" H 7250 1600 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 7100 1650 50  0001 C CNN
+F 3 "~" H 7100 1650 50  0001 C CNN
+	1    7100 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618E1011
+P 5250 1500
+AR Path="/6181BDB7/618E1011" Ref="C?"  Part="1" 
+AR Path="/618E1011" Ref="C10"  Part="1" 
+F 0 "C10" H 5400 1550 50  0000 L CNN
+F 1 "0.1μ" H 5400 1450 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 5250 1500 50  0001 C CNN
+F 3 "~" H 5250 1500 50  0001 C CNN
+	1    5250 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618E1017
+P 4900 1500
+AR Path="/6181BDB7/618E1017" Ref="C?"  Part="1" 
+AR Path="/618E1017" Ref="C9"  Part="1" 
+F 0 "C9" H 5050 1550 50  0000 L CNN
+F 1 "10μ" H 5050 1450 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 4900 1500 50  0001 C CNN
+F 3 "~" H 4900 1500 50  0001 C CNN
+	1    4900 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618E101D
+P 4500 1500
+AR Path="/6181BDB7/618E101D" Ref="C?"  Part="1" 
+AR Path="/618E101D" Ref="C7"  Part="1" 
+F 0 "C7" H 4650 1550 50  0000 L CNN
+F 1 "10μ" H 4650 1450 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 4500 1500 50  0001 C CNN
+F 3 "~" H 4500 1500 50  0001 C CNN
+	1    4500 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 1750 5450 2050
+Wire Wire Line
+	7200 1650 7350 1650
+Connection ~ 15750 1400
+Wire Wire Line
+	15750 1400 15750 1350
+Wire Wire Line
+	4350 3050 4350 3150
+Wire Wire Line
+	4350 3550 4350 3600
+Wire Wire Line
+	4350 3600 4650 3600
+Wire Wire Line
+	4650 3600 4650 3850
+Connection ~ 4350 3600
+Wire Wire Line
+	4350 3600 4350 3650
+Wire Wire Line
+	14800 8650 14800 8700
+Wire Wire Line
+	14800 9200 14800 9100
+Wire Wire Line
+	14800 9500 14800 9650
+Wire Wire Line
+	14800 9100 15300 9100
+Wire Wire Line
+	13100 2600 13100 2300
+Connection ~ 13100 2300
+Wire Wire Line
+	13350 2600 13350 2450
+Connection ~ 13350 2450
+NoConn ~ 14900 1900
+Wire Wire Line
+	6350 3600 6350 3650
+Wire Wire Line
+	6250 3600 6250 4050
+Wire Wire Line
+	6150 3600 6150 3900
+Wire Wire Line
+	6150 3900 6450 3900
+Wire Wire Line
+	6450 3900 6450 4050
+$Comp
+L Device:R R?
+U 1 1 618E106B
+P 13100 5050
+AR Path="/6181BDB7/618E106B" Ref="R?"  Part="1" 
+AR Path="/618E106B" Ref="R17"  Part="1" 
+F 0 "R17" H 13170 5096 50  0000 L CNN
+F 1 "130" H 13170 5005 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 13030 5050 50  0001 C CNN
+F 3 "~" H 13100 5050 50  0001 C CNN
+	1    13100 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 618E1071
+P 15000 5050
+AR Path="/6181BDB7/618E1071" Ref="R?"  Part="1" 
+AR Path="/618E1071" Ref="R25"  Part="1" 
+F 0 "R25" H 15070 5096 50  0000 L CNN
+F 1 "130" H 15070 5005 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 14930 5050 50  0001 C CNN
+F 3 "~" H 15000 5050 50  0001 C CNN
+	1    15000 5050
+	-1   0    0    1   
+$EndComp
+NoConn ~ 6850 5250
+NoConn ~ 7400 6400
+NoConn ~ 7400 6600
+NoConn ~ 7400 6800
+Wire Wire Line
+	2450 7000 3300 7000
+Wire Wire Line
+	6200 10200 6200 10100
+Wire Wire Line
+	6200 10100 5850 10100
+Wire Wire Line
+	5850 10100 5850 10500
+Wire Wire Line
+	5850 5050 5850 5250
+Wire Wire Line
+	6050 5050 6050 5250
+Wire Wire Line
+	6250 5050 6250 5250
+Wire Wire Line
+	6450 5050 6450 5250
+Wire Wire Line
+	6950 1650 6950 2150
+Wire Wire Line
+	11300 4350 11450 4350
+Wire Wire Line
+	11300 4500 11450 4500
+Wire Wire Line
+	11300 6350 11450 6350
+Wire Wire Line
+	11300 6500 11450 6500
+Wire Wire Line
+	4650 9350 4650 9450
+Wire Wire Line
+	7400 8000 7600 8000
+Text GLabel 4250 5150 1    50   Output ~ 0
+LED_3
+Text GLabel 7500 7400 2    50   Output ~ 0
+LED_2
+Text GLabel 14000 8900 1    50   Input ~ 0
+LED_1
+Text GLabel 13300 8900 1    50   Input ~ 0
+LED_2
+Text GLabel 12450 8900 1    50   Input ~ 0
+LED_3
+Wire Wire Line
+	12450 8900 12450 9000
+Wire Wire Line
+	14000 8900 14000 9000
+Wire Wire Line
+	13300 8900 13300 9000
+$Comp
+L Device:R R?
+U 1 1 618E0C2D
+P 12450 9150
+AR Path="/6181BDB7/618E0C2D" Ref="R?"  Part="1" 
+AR Path="/618E0C2D" Ref="R12"  Part="1" 
+F 0 "R12" H 12520 9196 50  0000 L CNN
+F 1 "330" H 12520 9105 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 12380 9150 50  0001 C CNN
+F 3 "~" H 12450 9150 50  0001 C CNN
+	1    12450 9150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0C27
+P 12450 9700
+AR Path="/6181BDB7/618E0C27" Ref="#PWR?"  Part="1" 
+AR Path="/618E0C27" Ref="#PWR060"  Part="1" 
+F 0 "#PWR060" H 12450 9450 50  0001 C CNN
+F 1 "GND" H 12455 9527 50  0000 C CNN
+F 2 "" H 12450 9700 50  0001 C CNN
+F 3 "" H 12450 9700 50  0001 C CNN
+	1    12450 9700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 618E0C1B
+P 12450 9500
+AR Path="/6181BDB7/618E0C1B" Ref="D?"  Part="1" 
+AR Path="/618E0C1B" Ref="D3"  Part="1" 
+F 0 "D3" V 12700 9400 50  0000 R CNN
+F 1 "LED_OSWT1608" V 12600 9450 50  0000 R CNN
+F 2 "Mouse_foot:LEDC1608X45N" H 12450 9500 50  0001 C CNN
+F 3 "~" H 12450 9500 50  0001 C CNN
+	1    12450 9500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12450 9300 12450 9350
+Wire Wire Line
+	12450 9650 12450 9700
+$Comp
+L Device:R R?
+U 1 1 618E0C07
+P 13300 9150
+AR Path="/6181BDB7/618E0C07" Ref="R?"  Part="1" 
+AR Path="/618E0C07" Ref="R18"  Part="1" 
+F 0 "R18" H 13370 9196 50  0000 L CNN
+F 1 "330" H 13370 9105 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 13230 9150 50  0001 C CNN
+F 3 "~" H 13300 9150 50  0001 C CNN
+	1    13300 9150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 618E0C01
+P 14000 9150
+AR Path="/6181BDB7/618E0C01" Ref="R?"  Part="1" 
+AR Path="/618E0C01" Ref="R21"  Part="1" 
+F 0 "R21" H 14070 9196 50  0000 L CNN
+F 1 "330" H 14070 9105 50  0000 L CNN
+F 2 "Mouse_foot:RESC1608X55N" V 13930 9150 50  0001 C CNN
+F 3 "~" H 14000 9150 50  0001 C CNN
+	1    14000 9150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0BFB
+P 13300 9700
+AR Path="/6181BDB7/618E0BFB" Ref="#PWR?"  Part="1" 
+AR Path="/618E0BFB" Ref="#PWR064"  Part="1" 
+F 0 "#PWR064" H 13300 9450 50  0001 C CNN
+F 1 "GND" H 13305 9527 50  0000 C CNN
+F 2 "" H 13300 9700 50  0001 C CNN
+F 3 "" H 13300 9700 50  0001 C CNN
+	1    13300 9700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E0BF5
+P 14000 9700
+AR Path="/6181BDB7/618E0BF5" Ref="#PWR?"  Part="1" 
+AR Path="/618E0BF5" Ref="#PWR068"  Part="1" 
+F 0 "#PWR068" H 14000 9450 50  0001 C CNN
+F 1 "GND" H 14005 9527 50  0000 C CNN
+F 2 "" H 14000 9700 50  0001 C CNN
+F 3 "" H 14000 9700 50  0001 C CNN
+	1    14000 9700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 618E0BEF
+P 13300 9500
+AR Path="/6181BDB7/618E0BEF" Ref="D?"  Part="1" 
+AR Path="/618E0BEF" Ref="D4"  Part="1" 
+F 0 "D4" V 13550 9400 50  0000 R CNN
+F 1 "LED_OSHR1608" V 13450 9450 50  0000 R CNN
+F 2 "Mouse_foot:LEDC1608X45N" H 13300 9500 50  0001 C CNN
+F 3 "~" H 13300 9500 50  0001 C CNN
+	1    13300 9500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 618E0BE9
+P 14000 9500
+AR Path="/6181BDB7/618E0BE9" Ref="D?"  Part="1" 
+AR Path="/618E0BE9" Ref="D5"  Part="1" 
+F 0 "D5" V 14250 9400 50  0000 R CNN
+F 1 "LED_OSBL1608" V 14150 9450 50  0000 R CNN
+F 2 "Mouse_foot:LEDC1608X45N" H 14000 9500 50  0001 C CNN
+F 3 "~" H 14000 9500 50  0001 C CNN
+	1    14000 9500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13300 9300 13300 9350
+Wire Wire Line
+	14000 9300 14000 9350
+Wire Wire Line
+	13300 9650 13300 9700
+Wire Wire Line
+	14000 9650 14000 9700
+Wire Wire Line
+	4850 5150 4850 5250
+Wire Wire Line
+	5050 5150 5050 5250
+Text GLabel 3850 9450 3    50   Output ~ 0
+MT-A-ENBL
+Text GLabel 3050 8800 0    50   Output ~ 0
+MT-A-IN
+NoConn ~ 7400 7800
+NoConn ~ 7400 8200
+NoConn ~ 6450 9350
+NoConn ~ 6250 9350
+NoConn ~ 3300 7800
+NoConn ~ 3300 7600
+Wire Wire Line
+	8350 8650 8450 8650
+$Comp
+L power:GND #PWR?
+U 1 1 618E104E
+P 8450 8650
+AR Path="/6181BDB7/618E104E" Ref="#PWR?"  Part="1" 
+AR Path="/618E104E" Ref="#PWR027"  Part="1" 
+F 0 "#PWR027" H 8450 8400 50  0001 C CNN
+F 1 "GND" H 8455 8477 50  0000 C CNN
+F 2 "" H 8450 8650 50  0001 C CNN
+F 3 "" H 8450 8650 50  0001 C CNN
+	1    8450 8650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618E1043
+P 8250 8650
+AR Path="/6181BDB7/618E1043" Ref="C?"  Part="1" 
+AR Path="/618E1043" Ref="C11"  Part="1" 
+F 0 "C11" H 8400 8750 50  0000 L CNN
+F 1 "0.1μ" H 8350 8600 50  0000 L CNN
+F 2 "Mouse_foot:CAPC1608X90N" H 8250 8650 50  0001 C CNN
+F 3 "~" H 8250 8650 50  0001 C CNN
+	1    8250 8650
+	0    -1   -1   0   
+$EndComp
+Text GLabel 8300 8850 2    50   Input ~ 0
+BUTTON
+Text GLabel 5250 9450 3    50   Input ~ 0
+PR-RCV-FR
+Wire Wire Line
+	8100 8650 8150 8650
+Wire Wire Line
+	8300 8850 8100 8850
+Wire Wire Line
+	4850 9350 4850 9450
+Wire Wire Line
+	5050 9350 5050 9450
+Wire Wire Line
+	5850 9350 5850 10100
+Connection ~ 5850 10100
+Wire Wire Line
+	5450 9350 5450 9450
+Wire Wire Line
+	5250 9350 5250 9450
+Wire Wire Line
+	3050 8400 3300 8400
+Wire Wire Line
+	3050 8600 3300 8600
+Wire Wire Line
+	3050 8800 3300 8800
+Wire Wire Line
+	3850 9350 3850 9450
+Wire Wire Line
+	4250 5150 4250 5250
+Wire Wire Line
+	7400 7600 7500 7600
+Wire Wire Line
+	7400 7400 7500 7400
+Wire Wire Line
+	8100 8800 7400 8800
+Wire Wire Line
+	8100 8650 8100 8800
+Connection ~ 8100 8800
+Wire Wire Line
+	8100 8800 8100 8850
+Wire Wire Line
+	3200 7200 3300 7200
+Wire Wire Line
+	3200 7400 3300 7400
+NoConn ~ 4450 5250
+NoConn ~ 5250 5250
+NoConn ~ 5450 5250
+NoConn ~ 5650 5250
+NoConn ~ 6650 5250
+NoConn ~ 3300 6200
+NoConn ~ 4450 9350
+NoConn ~ 5650 9350
+NoConn ~ 7400 6200
+Wire Wire Line
+	7400 7000 7600 7000
+Wire Wire Line
+	7400 7200 7600 7200
+Wire Wire Line
+	7850 1550 8550 1550
+Wire Wire Line
+	15200 2300 15200 2800
+Wire Wire Line
+	10850 5800 11400 5800
+Wire Wire Line
+	11200 6050 11400 6050
+Wire Wire Line
+	10850 3800 11400 3800
+Wire Wire Line
+	11200 4050 11400 4050
+Wire Wire Line
+	11400 1400 12000 1400
+Wire Wire Line
+	1950 8700 2350 8700
+Wire Wire Line
+	7400 5800 8050 5800
+Wire Wire Line
+	4500 1600 5250 1600
+Wire Wire Line
+	4500 1400 5550 1400
+Wire Wire Line
+	7850 1350 8900 1350
+$EndSCHEMATC

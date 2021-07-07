@@ -1,0 +1,74 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP +1.65VA
+D Power symbol creates a global label with name "+3.3VA"
+K power-flag
+$ENDCMP
+#
+$CMP AD8604
+D Precision Micropower, Low Noise CMOS, Rail-to-Rail Input/Output Operational Amplifier, TSOT-23-5
+K single opamp
+F https://www.analog.com/media/en/technical-documentation/data-sheets/AD8603_8607_8609.pdf
+$ENDCMP
+#
+$CMP B02B-PASK-1_LF__SN_
+D CONN HEADER VERT 2POS 2MM
+F http://www.jst-mfg.com/product/pdf/eng/ePA-F.pdf
+$ENDCMP
+#
+$CMP B02B-PASK_LF__SN_
+D CONN HEADER VERT 2POS 2MM
+F https://datasheet.datasheetarchive.com/originals/dk/DKDS41/DSANUWW0025340.pdf
+$ENDCMP
+#
+$CMP B2B-PH-K-S_LF__SN_
+D PH-2.0mm Header top entry 2 way JST PH Series, Series Number B2B, 2mm Pitch 2 Way 1 Row Straight PCB Header, Through Hole Termination, 2A
+F http://www.jst-mfg.com/product/pdf/eng/ePH.pdf
+$ENDCMP
+#
+$CMP DRV8838DSGT
+D Low-Voltage Half-Bridge Driver 1.8A WSON Texas Instruments DRV8838DSGT, MOSFET Power Driver 1.8A H Bridge, 1.8  7 V, 8-Pin WSON
+F http://www.ti.com/lit/ds/symlink/drv8838.pdf
+$ENDCMP
+#
+$CMP IRFML8244
+D N-MOSFET transistor, gate/source/drain
+K transistor NMOS N-MOS N-MOSFET
+F ~
+$ENDCMP
+#
+$CMP IR_LED
+D 850nm High Power Infrared Emitter, Side-Emitter package
+K IR LED
+F http://www.osram-os.com/Graphics/XPic0/00203825_0.pdf
+$ENDCMP
+#
+$CMP LT1963ES8-3_3
+D LDOレギュレータ
+$ENDCMP
+#
+$CMP OPA188xxDBV
+D Zero-Drift, Precision, Low-Noise, Rail-to-Rail Output, 36-V Operational Amplifier, TSOT-23-5
+K single opamp zero-drift
+F http://www.ti.com/lit/ds/symlink/opa188.pdf
+$ENDCMP
+#
+$CMP PHR-2
+D Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP Q_PMOS_DGS
+D P-MOSFET transistor, drain/gate/source
+K transistor PMOS P-MOS P-MOSFET
+F ~
+$ENDCMP
+#
+$CMP UART
+D Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+#End Doc Library
